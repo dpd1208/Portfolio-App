@@ -3,3 +3,15 @@ h1 {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.bullets {
+    float: right;
+    position: fixed;
+    border: yellow;
+    border-width: 30px;
+}
+
+h2 {
+    color: blue;
+    font-size: 30px;
+}
