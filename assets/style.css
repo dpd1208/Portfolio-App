@@ -168,6 +168,18 @@ footer {
     width: 18rem;
     margin-left:10%;
     }
+    .profile {
+        max-width:25em;
+        max-height:12em; 
+        margin-left:24%;
+        margin-right:35%;
+        margin-bottom: 5%;
+    }
+    .paragraph2 {
+        margin-left:2em;
+        padding-right: 0em;
+    }
+  }
   }
 
 
