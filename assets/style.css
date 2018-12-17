@@ -67,8 +67,7 @@ p {
 }
 
 .paragraph1 {
-    margin-left: 0;
-    margin-right: .5em;
+    margin-left: 0%;
 }
 
 .paragraph2 {
@@ -109,9 +108,12 @@ footer {
         max-height: 20rem;
         margin-left: 0rem;
     }
+    .paragraph1 {
+        margin-left: 0%;
+    }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 995.98px) {
     .card {
         width: 18rem;
         min-height: 20rem;
@@ -155,6 +157,7 @@ footer {
         max-height: 12em;
         margin-left: 30%;
         margin-right: 35%;
+        margin-bottom: 5%;
     }
 
     .main-contact {
@@ -166,6 +169,10 @@ footer {
         width: 18rem;
         margin-left: 20%;
     }
+    
+.paragraph1 {
+    margin-left: 5%;
+}
 
     .paragraph2 {
         margin-left: 2em;
