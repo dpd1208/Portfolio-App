@@ -166,11 +166,11 @@ footer {
 @media (max-width: 575.98px) {
 .card {
     width: 18rem;
-    margin-left:10%;
+    margin-left:2em;
     }
     .profile {
         max-width:25em;
-        max-height:12em; 
+        max-height:15em; 
         margin-left:24%;
         margin-right:35%;
         margin-bottom: 5%;
@@ -180,6 +180,18 @@ footer {
         padding-right: 0em;
     }
   }
+  @media (max-width: 380.98px) {
+    .card {
+        width: 16rem;
+        margin-left:2em;
+
+        }
+        @media (max-width: 320.98px) {
+            .card {
+                width: 12rem;
+                margin-left:2em;
+        
+                }
   }
 
 
