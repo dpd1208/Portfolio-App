@@ -82,6 +82,19 @@ p {
     margin-left: 5rem;
 }
 
+
+.card-text {
+    color: black;
+    font-size: 12px;
+    padding: 1px;
+    margin: 1px;
+}
+
+.card-body {
+    padding:5px;
+    margin: 0px;
+}
+
 .profile {
     max-width: 30em;
     max-height: 12em;
@@ -108,6 +121,18 @@ footer {
         max-height: 20rem;
         margin-left: 0rem;
     }
+
+    .card-text {
+        color: black;
+        font-size: 12px;
+        padding: 1px;
+        margin: 1px;
+    }
+    
+    .card-body {
+        padding:5px;
+        margin: 0px;
+    }
     .paragraph1 {
         margin-left: 0%;
     }
@@ -119,6 +144,18 @@ footer {
         min-height: 20rem;
         max-height: 20rem;
     }
+}
+
+.card-text {
+    color: black;
+    font-size: 12px;
+    padding: 1px;
+    margin: 1px;
+}
+
+.card-body {
+    padding:5px;
+    margin: 0px;
 }
 
 .profile {
@@ -169,10 +206,22 @@ footer {
         width: 18rem;
         margin-left: 20%;
     }
+
+    .card-text {
+        color: black;
+        font-size: 12px;
+        padding: 1px;
+        margin: 1px;
+    }
     
-.paragraph1 {
-    margin-left: 5%;
-}
+    .card-body {
+        padding:5px;
+        margin: 0px;
+    }
+    
+    .paragraph1 {
+        margin-left: 5%;
+    }
 
     .paragraph2 {
         margin-left: 2em;
@@ -185,6 +234,18 @@ footer {
     .card {
         width: 18rem;
         margin-left: 2em;
+    }
+
+    .card-text {
+        color: black;
+        font-size: 12px;
+        padding: 1px;
+        margin: 1px;
+    }
+    
+    .card-body {
+        padding:5px;
+        margin: 0px;
     }
 
     .profile {
@@ -207,6 +268,17 @@ footer {
         margin-left: 2em;
 
     }
+    .card-text {
+        color: black;
+        font-size: 12px;
+        padding: 1px;
+        margin: 1px;
+    }
+
+    .card-body {
+        padding:5px;
+        margin: 0px;
+    }
     .profile {
         max-width: 15em;
         max-height: 10em;
@@ -220,6 +292,17 @@ footer {
             width: 12rem;
             margin-left: 2em;
 
+        }
+        .card-text {
+            color: black;
+            font-size: 12px;
+            padding: 1px;
+            margin: 1px;
+        }
+        
+        .card-body {
+            padding:5px;
+            margin: 0px;
         }
         .profile {
             max-width: 15em;
