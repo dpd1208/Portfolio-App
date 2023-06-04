@@ -9,10 +9,10 @@ import {
   NavigationWrapper,
   LinkWrapper,
   Link,
-  Name,
+  Website,
   ContactButton,
   ContentWrapper,
-  NameAndContactWrapper,
+  WebsiteAndContactWrapper,
 } from "./NavBar.styled";
 import SkillsRibbon from "../SkillsRibbon/SkillsRibbon";
 
@@ -36,10 +36,10 @@ const NavBar = ({ testId, className, skills }) => {
         <Link><NavLink style={linkStyle} to="/">Home</NavLink></Link>
         <Link><NavLink style={linkStyle} to="/about">About</NavLink></Link>
     </LinkWrapper>
-        <NameAndContactWrapper>
-        {!isMobile && <Name style={{ width: '150px' }}>Daniel Duffy</Name>}
+        <WebsiteAndContactWrapper>
+          <Website href="https://github.com/dpd1208/" target="_blank">Github</Website>
         <ContactButton><NavLink style={linkStyle} to="/contact">Contact</NavLink></ContactButton>
-        </NameAndContactWrapper>
+        </WebsiteAndContactWrapper>
         </NavigationWrapper>
         <SkillsRibbon skills={skills}/>
       <ContentWrapper>

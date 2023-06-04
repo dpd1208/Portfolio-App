@@ -12,9 +12,12 @@ const pan = keyframes`
 
 const SectionWrapper = styled.div`
     width: 100%;
-    height: 300px;
-    position: relative;
+    height: 48px;
+    position: absolute;
+    top: 94vh;
     overflow: hidden;
+    background-color: rgb(0,0,0);
+    z-index: 1;
 
     .list, .list-bis {
         width: 6000px;
@@ -30,17 +33,6 @@ const SectionWrapper = styled.div`
       .list-bis {
         left: 3300px;
       }
-
-      .card1 { background: #BF3030; } 
-      .card2 { background: #BF7130; }
-      .card3 { background: #009999; }
-      .card4 { background: #008500; }
-      .card5 { background: #FFB273; }
-      .card6 { background: #BF3030; } 
-      .card7 { background: #BF7130; }
-      .card8 { background: #008500; }
-      .card9 { background: #FFB273; }
-      .card10 { background: #009999; }
 `;
 
 const ListWrapper = styled.div`
@@ -48,16 +40,16 @@ const ListWrapper = styled.div`
 `;
 
 const Card = styled.div`
-    height: 84px;
+    height: 42px;
+    line-height: 42px;
     width: 300px;
     display: inline-block;
-    margin-top: 30px;
     margin-left: 30px;
     float: left;
     overflow: hidden;
     text-align: center;
-    padding-top: 100px;
     color: white;
+    background-color: transparent;
 `;
 
 export {

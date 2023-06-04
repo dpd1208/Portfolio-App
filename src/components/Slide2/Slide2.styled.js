@@ -16,12 +16,12 @@ const SectionWrapper = styled.div `
 }
   `;
 
-  const NameSection = styled.div `
-  font-size: 60px;
+  const AboutSection = styled.div `
+  font-size: 30px;
   color: white;
   `;
 
-  const Name = styled.div `
+  const About = styled.div `
   position: relative;
   text-align: center;
   width: 100%;
@@ -30,6 +30,6 @@ const SectionWrapper = styled.div `
 
 export {
     SectionWrapper,
-  NameSection,
-  Name,
+    AboutSection,
+    About,
 };

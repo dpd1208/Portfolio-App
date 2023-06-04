@@ -3,12 +3,11 @@ import PropTypes from "prop-types";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import { SectionWrapper, StyledAliceCarouselWrapper } from "./Home.styled";
-import About from "../About/About";
-import Contact from "../Contact/Contact";
 import Slide from "../../components/Slide/Slide";
+import Slide2 from "../../components/Slide2/Slide2";
 
 const Home = ({ testId, className, skills }) => {
-  const items = [<About />, <Contact />, <Slide skills={skills} />];
+  const items = [<Slide />, <Slide2 />];
 
   return (
     <SectionWrapper

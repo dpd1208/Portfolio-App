@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { SectionWrapper, NameSection, Name } from "./Slide.styled";
+import { SectionWrapper, AboutSection, About } from "./Slide2.styled";
 
-const Slide = ({ testId, className }) => {
+const Slide2 = ({ testId, className }) => {
 
 useEffect(() => {
 
@@ -13,14 +13,14 @@ useEffect(() => {
       className={className}
       data-test-id={testId && `${testId}-slide`}
     >
-    <NameSection>
-      <Name>Daniel Duffy</Name>
-    </NameSection>
+    <AboutSection>
+      <About>Here is some info about me</About>
+    </AboutSection>
     </SectionWrapper>
   );
 };
 
-Slide.propTypes = {
+Slide2.propTypes = {
   /**
    * Id used for testing
    */
@@ -31,9 +31,9 @@ Slide.propTypes = {
   className: PropTypes.string
 };
 
-Slide.defaultProps = {
+Slide2.defaultProps = {
   testId: null,
   className: null
 };
 
-export default Slide;
+export default Slide2;

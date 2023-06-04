@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const NavBarWrapper = styled.div `
   position: relative;
   background-color: rgba(0,0,0,0.8);
-  height: 30px;
+  height: 42px;
 `;
 
 const NavigationWrapper = styled.div `
@@ -14,7 +14,7 @@ const NavigationWrapper = styled.div `
 const LinkWrapper = styled.div `
   position: relative;
   display: flex;
-  height: 30px;
+  height: 42px;
 `;
 
 const Link = styled.a `
@@ -27,36 +27,31 @@ const Link = styled.a `
   width: 36px;
 `;
 
-const Name = styled.div `
-  position: relative;
+const WebsiteAndContactWrapper = styled.div `
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: end;
+  width: 82%;
+  height: 42px;
+`;
+
+const Website = styled.a `
   display: flex;
   color: white;
   width: 150px;
-  justify-content: start;
+  justify-content: end;
   align-items: center;
+  text-decoration: none;
 `;
 
 const ContactButton = styled.a `
-  position: absolute;
   display: flex;
   color: white;
   width: 100px;
   justify-content: space-evenly;
   align-items: center;
   border: 1px solid white;
-  top: 7px;
-  right: 0;
-`;
-
-const NameAndContactWrapper = styled.div `
-  position: absolute;
-  display: flex;
-  color: white;
-  top: 0;
-  right: 24px;
-  align-items: center;
-  width: 50%;
-  height: 30px;
 `;
 
 const ContentWrapper = styled.div `
@@ -71,8 +66,8 @@ export {
     NavigationWrapper,
     LinkWrapper,
     Link,
-    Name,
+    Website,
     ContactButton,
-    NameAndContactWrapper,
+    WebsiteAndContactWrapper,
     ContentWrapper,
 };
