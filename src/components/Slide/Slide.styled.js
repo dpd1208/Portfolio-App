@@ -18,10 +18,9 @@ const panUpMobile = keyframes`
     }
     
   100% {
-    transform: translateY(-300px);
-    font-size:"42px;
-    transform: transformX: -420px;
-    width: 50px;
+    transform: translateY(-200px);
+    font-size: 42px;
+    text-align: center;
     }
 `;
 
@@ -59,12 +58,18 @@ const SectionWrapper = styled.div `
   font-size: 88px;
   color: black;
   font-family: 'Abril Fatface', cursive;
+  jestify-content: center;
+  text-align: center;
   animation: ${fadeInAnimation} ease 3s, 3s ${isMobile ? panUpMobile : panUpDesktop} ease  3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  width: 100%;
 
   @media (min-width: 768px) {
+    jestify-content: left;
+    text-align: start;
     font-size: 120px;
+    margin-left: 6%;
   }
   `;
 
@@ -72,6 +77,11 @@ const SectionWrapper = styled.div `
   position: relative;
   text-align: center;
   width: 100%;
+
+  @media (min-width: 768px) {
+    jestify-content: left;
+    text-align: start;
+  }
   `;
 
 

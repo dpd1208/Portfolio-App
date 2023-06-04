@@ -20,9 +20,8 @@ width: 100%;
 flex-flow: row wrap;
 align-items: center;
 align-content: center;
-height: 250px;
+height: 175px;
 justify-content: center;
-margin-bottom: 72px;
 
 @media (min-width: 768px) {
     width: 50%;

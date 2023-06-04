@@ -17,15 +17,28 @@ const SectionWrapper = styled.div `
   `;
 
   const AboutHeader = styled.div `
-  font-size: 60px;
+  font-size: 42px;
   color: black;
   font-family: 'Abril Fatface', cursive;
+  
+  @media (min-width: 768px) {
+    margin-left: 6%;
+    font-size: 60px;
+  }
   `;
   
   const AboutBody = styled.div `
-  font-size: 30px;
-  color: white;
+  font-size: 18px;
+  color: black;
   font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  margin-bottom: 72px;
+
+  @media (min-width: 768px) {
+    margin-left: 6%;
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
   `;
 
 export {

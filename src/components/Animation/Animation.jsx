@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
-import { SectionWrapper, NameSection, Name } from "./Slide.styled";
-import Animation from "../Animation/Animation";
+import { SectionWrapper, TopShape } from "./Animation.styled";
 
-const Slide = ({ testId, className }) => {
+const Animation = ({ testId, className }) => {
 
 useEffect(() => {
 
@@ -14,15 +13,12 @@ useEffect(() => {
       className={className}
       data-test-id={testId && `${testId}-slide`}
     >
-    <NameSection>
-      <Name>Daniel Duffy</Name>
-    </NameSection>
-    <Animation />
+    <TopShape />
     </SectionWrapper>
   );
 };
 
-Slide.propTypes = {
+Animation.propTypes = {
   /**
    * Id used for testing
    */
@@ -33,9 +29,9 @@ Slide.propTypes = {
   className: PropTypes.string
 };
 
-Slide.defaultProps = {
+Animation.defaultProps = {
   testId: null,
   className: null
 };
 
-export default Slide;
+export default Animation;
