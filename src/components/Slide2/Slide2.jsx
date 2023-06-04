@@ -14,7 +14,7 @@ useEffect(() => {
       data-test-id={testId && `${testId}-slide`}
     >
     <AboutSection>
-      <About>Here is some info about me</About>
+      <About>Here's a bit about me.</About>
     </AboutSection>
     </SectionWrapper>
   );

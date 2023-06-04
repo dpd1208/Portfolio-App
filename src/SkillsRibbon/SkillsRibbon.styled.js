@@ -12,14 +12,12 @@ const pan = keyframes`
 
 const SectionWrapper = styled.div`
     width: 100%;
-    height: 48px;
+    height: 60px;
     position: absolute;
     top: 94vh;
     overflow: hidden;
-    background: #000000;
-    background-image: radial-gradient(#191919, #191919, #000000);
+    background-color: #ffaaab;
     z-index: 1;
-    filter: drop-shadow(0 0 0.75rem #191919);
 
     .list, .list-bis {
         width: 6000px;
@@ -42,16 +40,18 @@ const ListWrapper = styled.div`
 `;
 
 const Card = styled.div`
-    height: 42px;
-    line-height: 42px;
+    height: 60px;
+    line-height: 60px;
     width: 300px;
     display: inline-block;
     margin-left: 30px;
     float: left;
     overflow: hidden;
     text-align: center;
-    color: white;
+    color: black;
     background-color: transparent;
+    font-weight: 600;
+    font-size: 18px;
 `;
 
 export {

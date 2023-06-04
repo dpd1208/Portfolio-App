@@ -16,7 +16,7 @@ const Home = ({ testId, className, skills }) => {
     ><StyledAliceCarouselWrapper>
     <AliceCarousel
       autoPlay
-      autoPlayInterval={3000}
+      autoPlayInterval={9000}
       autoPlayStrategy={"default"}
       animationDuration={3000}
       mouseTracking

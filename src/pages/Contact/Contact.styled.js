@@ -2,12 +2,11 @@ import styled from 'styled-components';
 
 const SectionWrapper = styled.div `
 display: block;
-background: linear-gradient(to bottom right, #070630 0%,#060454 100%);
-background-repeat: no-repeat;
+background-color: #fff5d7;
 height: 88vh;
 
 @media (min-width: 768px) {
-  height: 84vh;
+  height: 86vh;
   position: relative;
   padding: 24px;
   overflow: hidden;
@@ -23,6 +22,7 @@ align-items: center;
 align-content: center;
 height: 250px;
 justify-content: center;
+margin-bottom: 72px;
 
 @media (min-width: 768px) {
     width: 50%;
@@ -34,8 +34,8 @@ justify-content: center;
 
 const Title = styled.div `
 font-size: 72px;
-font-family: 'Permanent Marker', cursive;
-color: white;
+font-family: 'Abril Fatface', cursive;
+color: black;
 
 @media (min-width: 768px) {
   font-size: 98px;
@@ -50,6 +50,7 @@ flex-flow: row wrap;
 align-items: center;
 align-content: center;
 margin-right: 6%;
+margin-bottom: 72px;
 
 @media (min-width: 768px) {
     width: 50%;
@@ -59,11 +60,11 @@ margin-right: 6%;
 
 const Tagline = styled.div `
 font-size: 24px;
-font-family: 'Permanent Marker', cursive;
-font-weight: 500;
+font-family: 'Quicksand', sans-serif !important;
+font-weight: 700;
 text-align: center;
 margin-bottom: 12px;
-color: white;
+color: black;
 width: 100%;
 `;
 
@@ -80,14 +81,14 @@ width: 300px;
 
 const StyledInput = styled.input`
 width: 300px;
-  font-family: 'Geologica', sans-serif !important;
+font-family: 'Quicksand', sans-serif !important;
   padding: 6px;
   box-sizing: border-box;
 `;
 
 const StyledTextArea = styled.textarea`
 width: 300px;
-  font-family: 'Geologica', sans-serif !important;
+font-family: 'Quicksand', sans-serif !important;
   padding: 6px;
   height: 120px;
   box-sizing: border-box;
@@ -97,17 +98,18 @@ width: 300px;
 const StyledButton = styled.button`
   width: 300px;
   font-size: 18px;
-  font-family: 'Permanent Marker', cursive !important;
-    background-image: linear-gradient(to right, #D31027 0%, #EA384D  51%, #D31027  100%);
+  font-family: 'Quicksand', sans-serif !important;
+  background-color: #feb300;
     padding: 15px 45px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
-    color: white;            
+    color: black;            
     box-shadow: 0 0 6px #00000;
     border-radius: 10px;
     display: block;
+    font-weight: 600;
   }
 
   &:hover {

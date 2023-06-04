@@ -14,13 +14,17 @@ import {
   ContactButton,
   ContentWrapper,
   WebsiteAndContactWrapper,
+  Logo,
 } from "./NavBar.styled";
 import SkillsRibbon from "../SkillsRibbon/SkillsRibbon";
 
+const isMobile = window.innerWidth <= 768;
+
 const linkStyle = {
   textDecoration: "none",
-  color: "white",
-  fontSize: "12px",
+  color: "black",
+  fontSize: "18px",
+  fontWeight: "600",
 };
 
 const NavBar = ({ testId, className, skills }) => {
@@ -30,13 +34,14 @@ const NavBar = ({ testId, className, skills }) => {
       data-test-id={testId && `${testId}-nav-bar`}
     >
     <NavigationWrapper>
+      {!isMobile && <Logo>DD</Logo>}
       <LinkWrapper>
         <Link><NavLink style={linkStyle} to="/">Home</NavLink></Link>
         <Link><NavLink style={linkStyle} to="/about">About</NavLink></Link>
     </LinkWrapper>
         <WebsiteAndContactWrapper>
-          <ATag href="https://github.com/dpd1208/" target="_blank"><i class="fa fa-github fa-2x" style={{ width: "60px" }} /></ATag>
-          <ATag><NavLink style={linkStyle} to="/contact"><i class="fa fa-envelope fa-2x" style={{ width: "60px" }} /></NavLink></ATag>
+          <ATag href="https://github.com/dpd1208/" target="_blank"><i class="fa fa-github fa-2x" style={{ width: "60px", color: "black" }} /></ATag>
+          <ATag><NavLink style={linkStyle} to="/contact"><i class="fa fa-envelope fa-2x" style={{ width: "60px", color:"black" }} /></NavLink></ATag>
         </WebsiteAndContactWrapper>
         </NavigationWrapper>
         <SkillsRibbon skills={skills}/>

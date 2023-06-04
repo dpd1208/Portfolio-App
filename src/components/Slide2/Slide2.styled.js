@@ -4,13 +4,12 @@ const SectionWrapper = styled.div `
   position: relative;
   display: flex;
   flex-flow: row wrap;
-  height: 84vh;
+  height: 86vh;
   overflow: hidden;
-  background: radial-gradient(circle farthest-side, rgb(205, 33, 42), rgb(236, 95, 5));
-  background-repeat: no-repeat;
+  background-color: #fff5d7;
   align-content: space-evenly;
   fonst-size: 16px;
-  padding: 24px;
+  padding-left: 124px;
 
   .skill-focused {
     font-size: 36px;
@@ -19,8 +18,8 @@ const SectionWrapper = styled.div `
 
   const AboutSection = styled.div `
   font-size: 42px;
-  color: white;
-  font-family: 'Permanent Marker', cursive;
+  color: black;
+  font-family: 'Abril Fatface', cursive;
   `;
 
   const About = styled.div `
