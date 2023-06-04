@@ -106,8 +106,6 @@ const StyledButton = styled.button`
     transition: 0.5s;
     background-size: 200% auto;
     color: black;            
-    box-shadow: 0 0 6px #00000;
-    border-radius: 10px;
     display: block;
     font-weight: 600;
   }
