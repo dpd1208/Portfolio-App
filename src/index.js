@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Main from "./Main";
  
 ReactDOM.render(
-  <HashRouter>
+  <BrowserRouter basename={'/'}>
     <Main />
-  </HashRouter>,
+  </BrowserRouter>,
   document.querySelector("#root")
 );
