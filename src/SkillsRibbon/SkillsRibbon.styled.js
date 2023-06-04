@@ -14,6 +14,7 @@ const SectionWrapper = styled.div`
     width: 100%;
     height: 300px;
     position: relative;
+    overflow: hidden;
 
     .list, .list-bis {
         width: 6000px;
