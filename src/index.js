@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import Main from "./Main";
  
 ReactDOM.render(
-  <BrowserRouter basename={'/portfolio'}>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Main />
   </BrowserRouter>,
   document.querySelector("#root")
