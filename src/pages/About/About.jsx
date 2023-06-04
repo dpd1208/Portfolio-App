@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { SectionWrapper } from "./About.styled";
+import { SectionWrapper, AboutHeader, AboutBody, } from "./About.styled";
 
 const About = ({ testId, className }) => {
   return (
@@ -8,7 +8,8 @@ const About = ({ testId, className }) => {
       className={className}
       data-test-id={testId && `${testId}-about`}
     >
-      <h2 style={{ margin: '0px' }}>STUFF</h2>
+    <AboutHeader>A bit about me</AboutHeader>
+    <AboutBody>
       <p>Mauris sem velit, vehicula eget sodales vitae, rhoncus eget sapien:</p>
       <ol>
         <li>Nulla pulvinar diam</li>
@@ -17,6 +18,7 @@ const About = ({ testId, className }) => {
         <li>Eget erat</li>
         <li>Id porttitor</li>
       </ol>
+      </AboutBody>
     </SectionWrapper>
   );
 };

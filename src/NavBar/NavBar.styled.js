@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const NavBarWrapper = styled.div `
   position: relative;
   background-color: rgba(0,0,0,0.8);
-  height: 42px;
+  height: 60px;
 `;
 
 const NavigationWrapper = styled.div `
@@ -14,7 +14,8 @@ const NavigationWrapper = styled.div `
 const LinkWrapper = styled.div `
   position: relative;
   display: flex;
-  height: 42px;
+  height: 60px;
+  width: 50%;
 `;
 
 const Link = styled.a `
@@ -32,14 +33,13 @@ const WebsiteAndContactWrapper = styled.div `
   color: white;
   align-items: center;
   justify-content: end;
-  width: 82%;
-  height: 42px;
+  width: 50%;
+  height: 60px;
 `;
 
-const Website = styled.a `
+const ATag = styled.a `
   display: flex;
   color: white;
-  width: 150px;
   justify-content: end;
   align-items: center;
   text-decoration: none;
@@ -48,10 +48,8 @@ const Website = styled.a `
 const ContactButton = styled.a `
   display: flex;
   color: white;
-  width: 100px;
   justify-content: space-evenly;
   align-items: center;
-  border: 1px solid white;
 `;
 
 const ContentWrapper = styled.div `
@@ -66,7 +64,7 @@ export {
     NavigationWrapper,
     LinkWrapper,
     Link,
-    Website,
+    ATag,
     ContactButton,
     WebsiteAndContactWrapper,
     ContentWrapper,

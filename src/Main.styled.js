@@ -3,7 +3,7 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   body {
-      font-family: 'Geologica', sans-serif;
+    font-family: 'Quicksand', sans-serif;
   }
 `;
 

@@ -44,11 +44,8 @@ const StyledAliceCarouselWrapper = styled.div `
     display: none;
   }
 
-@media (max-width: 767px) {
   .alice-carousel__dots {
-    margin-top: 10px !important;
-    margin-bottom: 32px !important;
-  }
+    display: none;
 }
 `;
 

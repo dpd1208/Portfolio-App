@@ -16,8 +16,10 @@ const SectionWrapper = styled.div`
     position: absolute;
     top: 94vh;
     overflow: hidden;
-    background-color: rgb(0,0,0);
+    background: #000000;
+    background-image: radial-gradient(#191919, #191919, #000000);
     z-index: 1;
+    filter: drop-shadow(0 0 0.75rem #191919);
 
     .list, .list-bis {
         width: 6000px;
@@ -25,7 +27,7 @@ const SectionWrapper = styled.div`
         white-space: nowrap;
         display: inline-block;
         animation-name: ${pan};
-        animation-duration: 8s;
+        animation-duration: 16s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
       }

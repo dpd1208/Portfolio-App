@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Routes, Route, NavLink } from "react-router-dom";
+import GithubLogo from "../assets/GithubLogo";
 import Home from "../pages/Home/Home";
 import About from "../pages/About/About";
 import Contact from "../pages/Contact/Contact";
@@ -9,15 +10,12 @@ import {
   NavigationWrapper,
   LinkWrapper,
   Link,
-  Website,
+  ATag,
   ContactButton,
   ContentWrapper,
   WebsiteAndContactWrapper,
 } from "./NavBar.styled";
 import SkillsRibbon from "../SkillsRibbon/SkillsRibbon";
-
-const handleDragStart = e => e.preventDefault();
-const isMobile = window.innerWidth <= 768;
 
 const linkStyle = {
   textDecoration: "none",
@@ -37,8 +35,8 @@ const NavBar = ({ testId, className, skills }) => {
         <Link><NavLink style={linkStyle} to="/about">About</NavLink></Link>
     </LinkWrapper>
         <WebsiteAndContactWrapper>
-          <Website href="https://github.com/dpd1208/" target="_blank">Github</Website>
-        <ContactButton><NavLink style={linkStyle} to="/contact">Contact</NavLink></ContactButton>
+          <ATag href="https://github.com/dpd1208/" target="_blank"><i class="fa fa-github fa-2x" style={{ width: "60px" }} /></ATag>
+          <ATag><NavLink style={linkStyle} to="/contact"><i class="fa fa-envelope fa-2x" style={{ width: "60px" }} /></NavLink></ATag>
         </WebsiteAndContactWrapper>
         </NavigationWrapper>
         <SkillsRibbon skills={skills}/>

@@ -2,13 +2,15 @@ import styled from 'styled-components';
 
 const SectionWrapper = styled.div `
 display: block;
+background: linear-gradient(to bottom right, #070630 0%,#060454 100%);
+background-repeat: no-repeat;
+height: 88vh;
 
 @media (min-width: 768px) {
+  height: 84vh;
   position: relative;
   padding: 24px;
-  height: 84vh;
   overflow: hidden;
-  background-color: gray;
   display: flex;
 }
   `;
@@ -20,7 +22,7 @@ flex-flow: row wrap;
 align-items: center;
 align-content: center;
 height: 250px;
-text-align: center;
+justify-content: center;
 
 @media (min-width: 768px) {
     width: 50%;
@@ -31,16 +33,13 @@ text-align: center;
 `;
 
 const Title = styled.div `
-  font-size: 36px;
-  font-weight: 800;
-  flex-basis: 100%;
-  margin-bottom: 24px;
-`;
+font-size: 72px;
+font-family: 'Permanent Marker', cursive;
+color: white;
 
-const Tagline = styled.div `
-font-size: 18px;
-font-weight: 500;
-width: 100%;
+@media (min-width: 768px) {
+  font-size: 98px;
+  flex-basis: 100%;
 `;
 
 const FormWrapper = styled.div `
@@ -55,6 +54,17 @@ margin-right: 6%;
 @media (min-width: 768px) {
     width: 50%;
 }
+`;
+
+
+const Tagline = styled.div `
+font-size: 24px;
+font-family: 'Permanent Marker', cursive;
+font-weight: 500;
+text-align: center;
+margin-bottom: 12px;
+color: white;
+width: 100%;
 `;
 
 const StyledForm = styled.form`
@@ -86,10 +96,26 @@ width: 300px;
 
 const StyledButton = styled.button`
   width: 300px;
-  padding: 6px;
-  font-family: 'Geologica', sans-serif !important;
-  color: white;
-  background-color: blue;
+  font-size: 18px;
+  font-family: 'Permanent Marker', cursive !important;
+    background-image: linear-gradient(to right, #D31027 0%, #EA384D  51%, #D31027  100%);
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 6px #00000;
+    border-radius: 10px;
+    display: block;
+  }
+
+  &:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
   border-radius: 3px;
 `;
 

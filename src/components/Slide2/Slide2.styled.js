@@ -6,7 +6,8 @@ const SectionWrapper = styled.div `
   flex-flow: row wrap;
   height: 84vh;
   overflow: hidden;
-  background-color: gray;
+  background: radial-gradient(circle farthest-side, rgb(205, 33, 42), rgb(236, 95, 5));
+  background-repeat: no-repeat;
   align-content: space-evenly;
   fonst-size: 16px;
   padding: 24px;
@@ -17,8 +18,9 @@ const SectionWrapper = styled.div `
   `;
 
   const AboutSection = styled.div `
-  font-size: 30px;
+  font-size: 42px;
   color: white;
+  font-family: 'Permanent Marker', cursive;
   `;
 
   const About = styled.div `

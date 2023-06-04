@@ -60,10 +60,10 @@ const sendMail = () => {
     >
       <DescriptionWrapper>
         <Title>CONTACT</Title>
-        <Tagline>GOT QUESTIONS?</Tagline>
       </DescriptionWrapper>
       {submitted ? <Message>Thank you!</Message> :
       <FormWrapper>
+      <Tagline>GOT QUESTIONS?</Tagline>
       <StyledForm
       onSubmit={handleSubmit}
     >

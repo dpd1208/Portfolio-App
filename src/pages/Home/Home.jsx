@@ -18,8 +18,7 @@ const Home = ({ testId, className, skills }) => {
       autoPlay
       autoPlayInterval={3000}
       autoPlayStrategy={"default"}
-      animationDuration={1800}
-      infinite
+      animationDuration={3000}
       mouseTracking
       items={items}
     />
