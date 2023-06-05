@@ -14,7 +14,7 @@ const SectionWrapper = styled.div`
     width: 100%;
     height: 10vh;
     position: absolute;
-    top: 94vh;
+    top: 90vh;
     overflow: hidden;
     background-color: #ffaaab;
     z-index: 1;
