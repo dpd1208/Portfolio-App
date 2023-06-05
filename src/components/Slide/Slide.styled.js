@@ -10,6 +10,7 @@ const fadeInAnimation = keyframes`
   opacity: 1;
 }
 `;
+
 const panUpMobile = keyframes`
 0% {
     transform: translate(0);
@@ -30,7 +31,7 @@ const panUpDesktop = keyframes`
     }
     
   100% {
-    transform: translateY(-250px);
+    transform: translateY(-230px);
     font-size: 60px;
     transformX: 0;
     }

@@ -9,6 +9,15 @@ const slidein = keyframes`
   }
 `;
 
+const fadeInAnimation = keyframes`
+0% {
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+}
+`;
+
 const SectionWrapper = styled.div `
   position: relative;
   display: flex;
@@ -19,7 +28,6 @@ const SectionWrapper = styled.div `
   align-content: space-evenly;
   fonst-size: 16px;
   padding: 24px;
-  padding-left: 124px;
   justify-content: space-around;
 
   .skill-focused {
@@ -32,12 +40,22 @@ const AboutSection = styled.div `
   color: black;
   font-family: 'Abril Fatface', cursive;
   align-self: center;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
   `;
 
 const About = styled.div `
   position: relative;
   text-align: center;
+  opacity: 0;
   width: 100%;
+  animation: ${fadeInAnimation} ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
   `;
 
 const InfoBlockWrapper = styled.div `
@@ -53,21 +71,21 @@ const InfoBlockWrapper = styled.div `
     animation-iteration-count: ;
     animation-delay: 12s;
     animation-fill-mode: forwards;
-    background-color: #486580;
+    background-color: #ff8066;
   }
   .info-block-2 {
     animation: ${slidein} 1s;
     animation-iteration-count: ;
     animation-delay: 13s;
     animation-fill-mode: forwards;
-    background-color: #ff8066;
+    background-color: #20b2aa;
   }
   .info-block-3 {
     animation: ${slidein} 1s;
     animation-iteration-count: ;
     animation-delay: 14s;
     animation-fill-mode: forwards;
-    background-color: #626e20;
+    background-color: #FF5F1F;
   }
   .info-block-4 {
     animation: ${slidein} 1s;
@@ -95,6 +113,11 @@ const InfoBlock = styled.div `
   font-size: 18px;
   font-weight: 600;
   border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  :hover {
+    filter: brightness(1.25);
+  }
   `;
 
 

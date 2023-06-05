@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const NavBarWrapper = styled.div `
   position: relative;
-  background-color: #fff5d7;
+  background-color: #feb300;
 `;
 
 const NavigationWrapper = styled.div `
@@ -36,10 +36,6 @@ const WebsiteAndContactWrapper = styled.div `
   width: 50%;
   height: 60px;
   margin-top: 6px;
-
-  @media (min-width: 768px) {
-    margin-top: 12px;
-  }
 `;
 
 const ATag = styled.a `
@@ -65,7 +61,7 @@ const ContentWrapper = styled.div `
 
 const Logo = styled.div `
 position: absolute;
-top: 0;
+top: -10px;
 left: calc(50vw - 30px);
   font-size: 102px;
   color: black;

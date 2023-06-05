@@ -52,7 +52,7 @@ const NavBar = ({ testId, className, skills, aboutItems, }) => {
 					</Link>
 				</LinkWrapper>
 				<WebsiteAndContactWrapper>
-					<ATag href="https://github.com/dpd1208/" target="_blank">
+					<ATag href="https://github.com/dpd1208/portfolio" target="_blank">
 						<i
 							class="fa fa-github fa-2x"
 							style={{ width: '60px', color: 'black' }}

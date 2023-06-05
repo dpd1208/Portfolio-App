@@ -98,7 +98,7 @@ const StyledButton = styled.button `
   width: 300px;
   font-size: 18px;
   font-family: 'Quicksand', sans-serif !important;
-  background-color: #feb300;
+  background-color: #20b2aa;
     padding: 15px 45px;
     text-align: center;
     text-transform: uppercase;
@@ -107,12 +107,15 @@ const StyledButton = styled.button `
     color: black;            
     display: block;
     font-weight: 600;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    cursor: pointer;
   }
 
   &:hover {
     background-position: right center; /* change the direction of the change here */
-    color: #fff;
     text-decoration: none;
+    background-color: #EEE11B;
   }
  
   border-radius: 3px;

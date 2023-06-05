@@ -13,7 +13,7 @@ const Slide = ({ testId, className }) => {
 			data-test-id={testId && `${testId}-slide`}
 		>
 			<NameSection>
-				<Name>Daniel<br />Duffy</Name>
+        <Name>Daniel{isMobile && <br />}Duffy</Name>
 			</NameSection>
       {isMobile ? <Animation /> : <Flower />}
 		</SectionWrapper>
