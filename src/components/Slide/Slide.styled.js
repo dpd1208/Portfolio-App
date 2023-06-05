@@ -14,13 +14,11 @@ const panUpMobile = keyframes`
 0% {
     transform: translate(0);
     font-size: 88px;
-
     }
     
   100% {
     transform: translateY(-200px);
     font-size: 42px;
-    text-align: center;
     }
 `;
 

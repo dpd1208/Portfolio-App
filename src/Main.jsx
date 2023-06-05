@@ -50,7 +50,7 @@ Main.defaultProps = {
     'Background in product ownership',
     'My two dogs are the cutest',
     'You\'ll find me in the mountains',
-    'Hobbies: guitar, tennis, and woodworking',
+    'Guitar, tennis, and woodworking',
   ],
 };
 

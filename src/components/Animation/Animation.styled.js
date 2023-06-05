@@ -4,64 +4,74 @@ import styled, {
 
 const isMobile = window.innerWidth <= 768;
 
-const spin = keyframes `
+const fall = keyframes `
 0% {
-    transform: skew(-.25rad);
-    transform:rotate(360deg);
+    top: -550px;
+    height: 600px;
     }
-33% {
-    transform:rotate(360deg);
-    transform: skew(.25rad);
-}
-66% {
-    transform:rotate(360deg);
-    transform: skew(-.25rad);
+50% {
+  top: 550px;
+  height: 600px;
 }
 100% {
-    transform:rotate(360deg);
-    transform: skew(0);
+    top: 550px;
+    height: 0px;
 }
 `;
-const panUpMobile = keyframes `
-0% {
-    transform: translate(0);
-    font-size: 88px;
-    }
-    
-  100% {
-    transform: translateY(-200px);
-    font-size: 42px;
-    text-align: center;
-    }
-`;
 
-const panUpDesktop = keyframes `
+const grow = keyframes `
 0% {
-    transform: translate(0);
-    font-size:120px;
-
+  transform: scale(0);
     }
-    
-  100% {
-    transform: translateY(-300px);
-    font-size: 60px;
-    transformX: 0;
-    }
+100% {
+  transform: scale(1);
+}
 `;
 
 const SectionWrapper = styled.div `
   position: absolute;
   display: flex;
   flex-flow: row wrap;
-  height: 300px;
-  width: 300px;
 
   .skill-focused {
     font-size: 36px;
 }
   `;
 
+const Line = styled.div `
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 6px;
+  top: -600px;
+  left: 50vw;
+  background-color: black;
+  height: 600px;
+  animation: ${fall} 3s ease;
+  animation-delay: 3s;
+;`
+
+const WelcomeMessage = styled.div `
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  top: 50vh;
+  left: 0;
+  color: black;
+  font-size: 42px;
+  font-weight: 800;
+  width: 100%;
+  height: auto;
+  transform: scale(0);
+  animation: ${grow} 3s ease;
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
+;`
+
 
 export {
   SectionWrapper,
+  Line,
+  WelcomeMessage,
 };

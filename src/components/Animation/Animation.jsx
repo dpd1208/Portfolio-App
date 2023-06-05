@@ -1,15 +1,15 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { SectionWrapper } from './Animation.styled';
+import { SectionWrapper, Line, WelcomeMessage } from './Animation.styled';
 
 const Animation = ({ testId, className }) => {
 	useEffect(() => {}, []);
 
 	return (
-		<SectionWrapper
+		<><SectionWrapper
 			className={className}
-			data-test-id={testId && `${testId}-slide`}
-		></SectionWrapper>
+			data-test-id={testId && `${testId}-mobile-animation`}
+		></SectionWrapper><Line /><WelcomeMessage>Welcome!</WelcomeMessage></>
 	);
 };
 

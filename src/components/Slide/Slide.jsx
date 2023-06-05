@@ -5,6 +5,7 @@ import Animation from '../Animation/Animation';
 import Flower from '../Flower/Flower'
 
 const Slide = ({ testId, className }) => {
+  const isMobile = window.innerWidth <= 768;
 
 	return (
 		<SectionWrapper
@@ -12,9 +13,9 @@ const Slide = ({ testId, className }) => {
 			data-test-id={testId && `${testId}-slide`}
 		>
 			<NameSection>
-				<Name>Daniel Duffy</Name>
+				<Name>Daniel<br />Duffy</Name>
 			</NameSection>
-      <Flower />
+      {isMobile ? <Animation /> : <Flower />}
 		</SectionWrapper>
 	);
 };
