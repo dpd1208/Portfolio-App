@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { SectionWrapper, AboutHeader, AboutBody, PhotoWrapper, ProfilePhoto } from './About.styled';
+import profilePic from '../../assets/profile_photo_2.jpg';
 
 const About = ({ testId, className }) => {
 	return (
@@ -10,7 +11,7 @@ const About = ({ testId, className }) => {
 		>
 			<AboutHeader>A bit about me</AboutHeader>
 			<AboutBody>
-				<PhotoWrapper><ProfilePhoto src="../../assets/profile_photo_2.jpg"/></PhotoWrapper>
+				<PhotoWrapper><ProfilePhoto src={profilePic} /></PhotoWrapper>
 			</AboutBody>
 		</SectionWrapper>
 	);

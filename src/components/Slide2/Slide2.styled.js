@@ -106,17 +106,22 @@ const InfoBlockWrapper = styled.div `
 const InfoBlock = styled.div `
   margin-bottom: 12px;
   transform: translateX(3000px);
-  width: 400px;
+  width: 300px;
   height: 60px;
   line-height: 60px;
-  padding-left: 12px;
   font-size: 18px;
   font-weight: 600;
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: center;
 
   :hover {
     filter: brightness(1.25);
+  }
+
+  @media (min-width: 768px) {
+    width: 400px;
+    padding-left: 12px;
   }
   `;
 

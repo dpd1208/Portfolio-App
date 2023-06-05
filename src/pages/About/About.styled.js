@@ -7,12 +7,18 @@ const SectionWrapper = styled.div `
   height: 80vh;
   overflow: hidden;
   background-color: #fff5d7;
-  align-content: space-evenly;
+  align-items: center;
+  justify-content: center;
   fonst-size: 16px;
   padding: 24px;
 
   .skill-focused {
     font-size: 36px;
+}
+
+
+@media (min-width: 768px) {
+  justify-content: space-between;
 }
   `;
 
@@ -42,19 +48,21 @@ const AboutBody = styled.div `
   `;
 
   const PhotoWrapper = styled.div`
-    width: 100px;
-    height: 100px;
     position: relative;
     overflow: hidden;
-    border-radius: 50%;
+
+    @media (min-width: 768px) {
+      padding: 100px;
+    }
 ;`
 
 const ProfilePhoto = styled.img`
   display: inline;
   margin: 0 auto;
   margin-left: -25%;
-  height: 100%;
-  width: auto;
+  width: 200px;
+  margin-left: 6px;
+  border-radius: 50%;
   `;
 
 export {

@@ -62,7 +62,7 @@ const NavBar = ({ testId, className, skills, aboutItems, }) => {
 						<NavLink style={linkStyle} to="/contact">
 							<i
 								class="fa fa-envelope fa-2x"
-								style={{ width: '60px', color: 'black' }}
+								style={{ width: '60px', color: 'black', marginBottom: '3px' }}
 							/>
 						</NavLink>
 					</ATag>
