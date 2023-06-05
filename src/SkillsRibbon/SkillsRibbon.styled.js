@@ -12,7 +12,7 @@ const pan = keyframes`
 
 const SectionWrapper = styled.div`
     width: 100%;
-    height: 60px;
+    height: 10vh;
     position: absolute;
     top: 94vh;
     overflow: hidden;

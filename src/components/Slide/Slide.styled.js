@@ -42,7 +42,7 @@ const SectionWrapper = styled.div `
   position: relative;
   display: flex;
   flex-flow: row wrap;
-  height: 86vh;
+  height: 80vh;
   overflow: hidden;
   background-color: #fff5d7;
   align-content: space-evenly;

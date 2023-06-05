@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const NavBarWrapper = styled.div `
   position: relative;
   background-color: #fff5d7;
-  height: 72px;
+  height: 10vh;
 `;
 
 const NavigationWrapper = styled.div `
@@ -14,7 +14,7 @@ const NavigationWrapper = styled.div `
 const LinkWrapper = styled.div `
   position: relative;
   display: flex;
-  height: 72px;
+  height: 10vh;
   width: 50%;
 `;
 

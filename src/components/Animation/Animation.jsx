@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
-import { SectionWrapper, TopShape } from "./Animation.styled";
+import { SectionWrapper } from "./Animation.styled";
 
 const Animation = ({ testId, className }) => {
 
@@ -13,7 +13,6 @@ useEffect(() => {
       className={className}
       data-test-id={testId && `${testId}-slide`}
     >
-    <TopShape />
     </SectionWrapper>
   );
 };

@@ -3,10 +3,10 @@ import styled from 'styled-components';
 const SectionWrapper = styled.div `
 display: block;
 background-color: #fff5d7;
-height: 88vh;
+height: 80vh;
 
 @media (min-width: 768px) {
-  height: 86vh;
+  height: 80vh;
   position: relative;
   padding: 24px;
   overflow: hidden;

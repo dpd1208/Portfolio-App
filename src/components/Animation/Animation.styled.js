@@ -59,19 +59,7 @@ const SectionWrapper = styled.div `
 }
   `;
 
-const TopShape = styled.div `
-    background-color: green;
-    width: 50px;
-    height: 50px;
-    transform: rotate(90deg);
-    border-radius: 6px;
-    z-index: 100;
-    transform: skew(-.25rad);
-    animation: ${spin} 4s linear infinite;
-`;
-
 
 export {
     SectionWrapper,
-    TopShape,
 };
