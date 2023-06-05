@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { SectionWrapper, NameSection, Name } from './Slide.styled';
 import Animation from '../Animation/Animation';
+import Flower from '../Flower/Flower'
 
 const Slide = ({ testId, className }) => {
-	useEffect(() => {}, []);
 
 	return (
 		<SectionWrapper
@@ -14,7 +14,7 @@ const Slide = ({ testId, className }) => {
 			<NameSection>
 				<Name>Daniel Duffy</Name>
 			</NameSection>
-			<Animation />
+      <Flower />
 		</SectionWrapper>
 	);
 };
