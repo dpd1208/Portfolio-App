@@ -1,8 +1,10 @@
-import styled, { keyframes } from 'styled-components';
+import styled, {
+  keyframes
+} from 'styled-components';
 
 const isMobile = window.innerWidth <= 768;
 
-const spin = keyframes`
+const spin = keyframes `
 0% {
     transform: skew(-.25rad);
     transform:rotate(360deg);
@@ -20,7 +22,7 @@ const spin = keyframes`
     transform: skew(0);
 }
 `;
-const panUpMobile = keyframes`
+const panUpMobile = keyframes `
 0% {
     transform: translate(0);
     font-size: 88px;
@@ -33,7 +35,7 @@ const panUpMobile = keyframes`
     }
 `;
 
-const panUpDesktop = keyframes`
+const panUpDesktop = keyframes `
 0% {
     transform: translate(0);
     font-size:120px;
@@ -61,5 +63,5 @@ const SectionWrapper = styled.div `
 
 
 export {
-    SectionWrapper,
+  SectionWrapper,
 };

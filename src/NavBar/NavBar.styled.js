@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const NavBarWrapper = styled.div `
   position: relative;
   background-color: #fff5d7;
-  height: 10vh;
 `;
 
 const NavigationWrapper = styled.div `
@@ -81,13 +80,13 @@ left: calc(50vw - 30px);
 
 
 export {
-    NavBarWrapper,
-    NavigationWrapper,
-    LinkWrapper,
-    Link,
-    ATag,
-    ContactButton,
-    WebsiteAndContactWrapper,
-    ContentWrapper,
-    Logo,
+  NavBarWrapper,
+  NavigationWrapper,
+  LinkWrapper,
+  Link,
+  ATag,
+  ContactButton,
+  WebsiteAndContactWrapper,
+  ContentWrapper,
+  Logo,
 };

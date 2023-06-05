@@ -1,6 +1,8 @@
-import styled, { keyframes } from 'styled-components';
+import styled, {
+  keyframes
+} from 'styled-components';
 
-const pan = keyframes`
+const pan = keyframes `
 0% {
     transform: translateX(0);
     }
@@ -10,7 +12,7 @@ const pan = keyframes`
     }
 `;
 
-const SectionWrapper = styled.div`
+const SectionWrapper = styled.div `
     width: 100%;
     height: 10vh;
     position: absolute;
@@ -35,11 +37,11 @@ const SectionWrapper = styled.div`
       }
 `;
 
-const ListWrapper = styled.div`
+const ListWrapper = styled.div `
     width: 3700px;
 `;
 
-const Card = styled.div`
+const Card = styled.div `
     height: 60px;
     line-height: 60px;
     width: 300px;
@@ -55,7 +57,7 @@ const Card = styled.div`
 `;
 
 export {
-    SectionWrapper,
-    ListWrapper,
-    Card,
+  SectionWrapper,
+  ListWrapper,
+  Card,
 };

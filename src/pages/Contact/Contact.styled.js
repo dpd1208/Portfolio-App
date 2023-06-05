@@ -67,25 +67,25 @@ color: black;
 width: 100%;
 `;
 
-const StyledForm = styled.form`
+const StyledForm = styled.form `
     width: 300px;
 `;
 
 
-const InputWrapper = styled.div`
+const InputWrapper = styled.div `
 width: 300px;
     margin-bottom: 12px;
 `;
 
 
-const StyledInput = styled.input`
+const StyledInput = styled.input `
 width: 300px;
 font-family: 'Quicksand', sans-serif !important;
   padding: 6px;
   box-sizing: border-box;
 `;
 
-const StyledTextArea = styled.textarea`
+const StyledTextArea = styled.textarea `
 width: 300px;
 font-family: 'Quicksand', sans-serif !important;
   padding: 6px;
@@ -94,7 +94,7 @@ font-family: 'Quicksand', sans-serif !important;
 `;
 
 
-const StyledButton = styled.button`
+const StyledButton = styled.button `
   width: 300px;
   font-size: 18px;
   font-family: 'Quicksand', sans-serif !important;
@@ -123,15 +123,15 @@ width: 100%;
 `;
 
 export {
-    SectionWrapper,
-    DescriptionWrapper,
-    Title,
-    Tagline,
-    FormWrapper,
-    StyledForm,
-    InputWrapper,
-    StyledInput,
-    StyledTextArea,
-    StyledButton,
-    Message,
+  SectionWrapper,
+  DescriptionWrapper,
+  Title,
+  Tagline,
+  FormWrapper,
+  StyledForm,
+  InputWrapper,
+  StyledInput,
+  StyledTextArea,
+  StyledButton,
+  Message,
 };

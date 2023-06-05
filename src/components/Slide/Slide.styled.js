@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 
 const isMobile = window.innerWidth <= 768;
-console.log('lii ', isMobile);
+
 const fadeInAnimation = keyframes`
 0% {
   opacity: 0;
@@ -32,7 +32,7 @@ const panUpDesktop = keyframes`
     }
     
   100% {
-    transform: translateY(-300px);
+    transform: translateY(-250px);
     font-size: 60px;
     transformX: 0;
     }
@@ -84,9 +84,14 @@ const SectionWrapper = styled.div `
   }
   `;
 
+  const InfoBlock = styled.div `
+  
+  `;
+
 
 export {
     SectionWrapper,
   NameSection,
   Name,
+  InfoBlock,
 };

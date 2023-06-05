@@ -16,7 +16,7 @@ const SectionWrapper = styled.div `
 }
   `;
 
-  const AboutHeader = styled.div `
+const AboutHeader = styled.div `
   font-size: 42px;
   color: black;
   font-family: 'Abril Fatface', cursive;
@@ -26,8 +26,8 @@ const SectionWrapper = styled.div `
     font-size: 60px;
   }
   `;
-  
-  const AboutBody = styled.div `
+
+const AboutBody = styled.div `
   font-size: 18px;
   color: black;
   font-family: 'Quicksand', sans-serif;
@@ -41,8 +41,26 @@ const SectionWrapper = styled.div `
   }
   `;
 
+  const PhotoWrapper = styled.div`
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+;`
+
+const ProfilePhoto = styled.img`
+  display: inline;
+  margin: 0 auto;
+  margin-left: -25%;
+  height: 100%;
+  width: auto;
+  `;
+
 export {
-    SectionWrapper,
-    AboutHeader,
-    AboutBody,
+  SectionWrapper,
+  AboutHeader,
+  AboutBody,
+  PhotoWrapper,
+  ProfilePhoto,
 };
