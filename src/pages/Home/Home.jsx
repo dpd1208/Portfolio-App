@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { SectionWrapper, StyledAliceCarouselWrapper } from './Home.styled';
@@ -21,27 +20,11 @@ const Home = ({ testId, className, aboutItems }) => {
 					autoPlayStrategy={'none'}
 					animationDuration={3000}
 					mouseTracking
-					items={items}
+          items={items}
 				/>
 			</StyledAliceCarouselWrapper>
 		</SectionWrapper>
 	);
-};
-
-Home.propTypes = {
-	/**
-	 * Id used for testing
-	 */
-	testId: PropTypes.string,
-	/**
-	 * Class name
-	 */
-	className: PropTypes.string,
-};
-
-Home.defaultProps = {
-	testId: null,
-	className: null,
 };
 
 export default Home;

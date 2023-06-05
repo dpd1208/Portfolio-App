@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Routes, Route, NavLink } from 'react-router-dom';
 import GithubLogo from '../assets/GithubLogo';
 import Home from '../pages/Home/Home';
@@ -27,7 +26,7 @@ const linkStyle = {
 	fontWeight: '600',
 };
 
-const NavBar = ({ testId, className, skills, aboutItems, }) => {
+const NavBar = ({ testId, className, skills, aboutItems, aboutItemsModalContent }) => {
 	return (
 		<NavBarWrapper
 			className={className}
@@ -77,22 +76,6 @@ const NavBar = ({ testId, className, skills, aboutItems, }) => {
 			</Routes>
 		</NavBarWrapper>
 	);
-};
-
-NavBar.propTypes = {
-	/**
-	 * Id used for testing
-	 */
-	testId: PropTypes.string,
-	/**
-	 * Class name
-	 */
-	className: PropTypes.string,
-};
-
-NavBar.defaultProps = {
-	testId: null,
-	className: null,
 };
 
 export default NavBar;

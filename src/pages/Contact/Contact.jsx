@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-
 import {
 	SectionWrapper,
 	DescriptionWrapper,
@@ -108,22 +106,6 @@ const Contact = ({ testId, className }) => {
 			)}
 		</SectionWrapper>
 	);
-};
-
-Contact.propTypes = {
-	/**
-	 * Id used for testing
-	 */
-	testId: PropTypes.string,
-	/**
-	 * Class name
-	 */
-	className: PropTypes.string,
-};
-
-Contact.defaultProps = {
-	testId: null,
-	className: null,
 };
 
 export default Contact;

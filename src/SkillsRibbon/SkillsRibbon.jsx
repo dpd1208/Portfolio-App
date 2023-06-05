@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
 import { SectionWrapper, ListWrapper, Card } from './SkillsRibbon.styled';
 
 const SkillsRibbon = ({ testId, className, skills }) => {
@@ -17,22 +16,6 @@ const SkillsRibbon = ({ testId, className, skills }) => {
 			</ListWrapper>
 		</SectionWrapper>
 	);
-};
-
-SkillsRibbon.propTypes = {
-	/**
-	 * Id used for testing
-	 */
-	testId: PropTypes.string,
-	/**
-	 * Class name
-	 */
-	className: PropTypes.string,
-};
-
-SkillsRibbon.defaultProps = {
-	testId: null,
-	className: null,
 };
 
 export default SkillsRibbon;

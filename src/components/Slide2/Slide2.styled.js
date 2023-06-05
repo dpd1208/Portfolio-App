@@ -103,6 +103,12 @@ const InfoBlockWrapper = styled.div `
   }
   `;
 
+  const ModalButton = styled.button `
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  `;
+
 const InfoBlock = styled.div `
   margin-bottom: 12px;
   transform: translateX(3000px);
@@ -130,6 +136,7 @@ export {
   SectionWrapper,
   AboutSection,
   About,
+  ModalButton,
   InfoBlockWrapper,
   InfoBlock,
 };
