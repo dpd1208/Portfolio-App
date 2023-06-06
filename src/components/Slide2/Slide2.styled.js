@@ -36,7 +36,7 @@ const SectionWrapper = styled.div `
   `;
 
 const AboutSection = styled.div `
-  font-size: 42px;
+  font-size: 60px;
   color: black;
   font-family: 'Abril Fatface', cursive;
   align-self: center;
@@ -78,28 +78,28 @@ const InfoBlockWrapper = styled.div `
     animation-iteration-count: ;
     animation-delay: 13s;
     animation-fill-mode: forwards;
-    background-color: #d8d8d8;
+    background-color: #85dcb;
   }
   .info-block-3 {
     animation: ${slidein} 1s;
     animation-iteration-count: ;
     animation-delay: 14s;
     animation-fill-mode: forwards;
-    background-color: #ffffea;
+    background-color: #e8a87c;
   }
   .info-block-4 {
     animation: ${slidein} 1s;
     animation-iteration-count: ;
     animation-delay: 15s;
     animation-fill-mode: forwards;
-    background-color: #00cecb;
+    background-color: #c38d9e;
   }
   .info-block-5 {
     animation: ${slidein} 1s;
     animation-iteration-count: ;
     animation-delay: 16s;
     animation-fill-mode: forwards;
-    background-color: #ffed66;
+    background-color: #41b3a3;
   }
   `;
 
