@@ -123,7 +123,12 @@ const StyledButton = styled.button `
 `;
 
 const Message = styled.div `
-width: 100%;
+  width: 50%;
+  font-size: 66px;
+  font-weight: 800;
+  align-self: center;
+  text-align: center;
+  margin: 0 auto;
 `;
 
 export {

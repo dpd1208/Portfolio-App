@@ -1,18 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { SectionWrapper, Line, WelcomeMessage } from './Animation.styled';
+import { SectionWrapper, WelcomeMessage } from './Welcome.styled';
 
-const Animation = ({ testId, className }) => {
+const Welcome = ({ testId, className }) => {
 
 	return (
 		<><SectionWrapper
 			className={className}
 			data-test-id={testId && `${testId}-mobile-animation`}
-		></SectionWrapper><Line /><WelcomeMessage>Welcome!</WelcomeMessage></>
+		></SectionWrapper><WelcomeMessage>Welcome!</WelcomeMessage></>
 	);
 };
 
-Animation.propTypes = {
+Welcome.propTypes = {
 	/**
 	 * Id used for testing
 	 */
@@ -23,9 +23,9 @@ Animation.propTypes = {
 	className: PropTypes.string,
 };
 
-Animation.defaultProps = {
+Welcome.defaultProps = {
 	testId: null,
 	className: null,
 };
 
-export default Animation;
+export default Welcome;
