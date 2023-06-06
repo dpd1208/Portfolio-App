@@ -8,7 +8,7 @@ const NavBarWrapper = styled.div `
 const NavigationWrapper = styled.div `
   display: flex;
   width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-bottom: 2px solid #A4A7A5;
 `;
 
 const LinkWrapper = styled.div `
@@ -66,7 +66,7 @@ top: -10px;
 left: calc(50vw - 30px);
   font-size: 102px;
   color: black;
-  font-family: 'Permanent Marker', cursive;
+  font-family: 'Cedarville Cursive', cursive;
   width: 60px;
   font-size: 42px;
   

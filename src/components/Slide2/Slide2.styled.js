@@ -43,7 +43,7 @@ const AboutSection = styled.div `
   width: 100%;
 
   @media (min-width: 768px) {
-    width: 33%;
+    width: 36%;
     font-size: 48px;
   }
   `;
@@ -125,11 +125,11 @@ const InfoBlock = styled.div `
   font-size: 18px;
   font-weight: 600;
   border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-align: center;
 
   :hover {
-    filter: brightness(1.25);
+    filter: brightness(1.1);
   }
 
   @media (min-width: 768px) {
