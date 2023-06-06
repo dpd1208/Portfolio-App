@@ -108,6 +108,7 @@ const InfoBlockWrapper = styled.div `
     background: transparent;
     border: none;
     cursor: pointer;
+    color: black;
   `;
 
 const InfoBlock = styled.div `

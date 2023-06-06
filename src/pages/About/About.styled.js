@@ -74,7 +74,7 @@ const ProfilePhoto = styled.img`
   overflow: hidden;
   position: absolute;
   width: 100%;
-  top: 72vh;
+  top: 66vh;
 
   @media (min-width: 768px) {
     padding: 100px;
