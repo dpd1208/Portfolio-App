@@ -106,7 +106,7 @@ const ProfilePhoto = styled.img`
 
   &:hover {
     background-position: right center;
-    filter: brightness(1.1);
+    filter: brightness(1);
   }
  
   border-radius: 3px;
