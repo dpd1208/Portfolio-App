@@ -18,7 +18,7 @@ const SectionWrapper = styled.div `
 
 
 @media (min-width: 768px) {
-  justify-content: space-between;
+  justify-content: space-around;
 }
   `;
 
