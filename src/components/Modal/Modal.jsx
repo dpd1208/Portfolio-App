@@ -23,7 +23,6 @@ const Modal = ({
         <CloseButton
             onClick={() => {
             setShowModal(false);
-            console.log('li');
             }}
             className="close">
             <i
