@@ -50,7 +50,6 @@ const AboutBody = styled.div `
 
   const PhotoWrapper = styled.div`
     position: relative;
-    overflow: hidden;
     align-self: self-start;
 
     @media (min-width: 768px) {
@@ -65,6 +64,8 @@ const ProfilePhoto = styled.img`
   width: 200px;
   margin-left: 6px;
   border-radius: 50%;
+  border: 12px solid #dbd551;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   `;
 
   const ButtonContainer = styled.div`
@@ -89,13 +90,13 @@ const ProfilePhoto = styled.img`
   display: inline-block;
   font-size: 12px;
   font-family: 'Quicksand', sans-serif !important;
-  background-color: #20b2aa;
+  background-color: #421c52;
     padding: 15px 45px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
-    color: black;            
+    color: white;            
     display: block;
     font-weight: 600;
     border: none;
@@ -105,7 +106,7 @@ const ProfilePhoto = styled.img`
 
   &:hover {
     background-position: right center; /* change the direction of the change here */
-    background-color: #EEE11B;
+    filter: brightness(1.5);
   }
 
   @media (min-width: 768px) {

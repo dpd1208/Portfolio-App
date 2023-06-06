@@ -22,12 +22,12 @@ const About = ({ testId, className }) => {
         <StyledButton href='../../assets/DanielDuffyResume.pdf' download='DanielDuffyResume'>
         <i
           class="fa fa-download"
-          style={{ color: 'black', marginRight: '24px' }}
+          style={{ color: 'white', marginRight: '24px' }}
         />{isMobile ? 'CV' : 'Resume'}</StyledButton>
               <StyledButton href='https://www.github.com/dpd1208/portfolio'>
         <i
           class="fa fa-github"
-          style={{ color: 'black', marginRight: '24px' }}
+          style={{ color: 'white', marginRight: '24px' }}
           />{isMobile ? 'Git' : 'Github'}</StyledButton>
         </ButtonContainer>
 		</SectionWrapper>

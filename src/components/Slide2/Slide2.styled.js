@@ -78,7 +78,7 @@ const InfoBlockWrapper = styled.div `
     animation-iteration-count: ;
     animation-delay: 13s;
     animation-fill-mode: forwards;
-    background-color: #85dcb;
+    background-color: #e8ec77;
   }
   .info-block-3 {
     animation: ${slidein} 1s;

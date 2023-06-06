@@ -18,7 +18,7 @@ const SectionWrapper = styled.div `
     position: absolute;
     top: 90vh;
     overflow: hidden;
-    background-color: #ffaaab;
+    background-color: #fff5d7;
     z-index: 1;
 
     .list, .list-bis {

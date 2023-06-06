@@ -114,7 +114,7 @@ const StyledButton = styled.button `
   }
 
   &:hover {
-    background-position: right center; /* change the direction of the change here */
+    background-position: right center;
     text-decoration: none;
     background-color: #EEE11B;
   }
