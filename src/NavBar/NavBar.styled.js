@@ -65,7 +65,6 @@ position: absolute;
 top: -10px;
 left: calc(50vw - 30px);
   font-size: 102px;
-  color: black;
   font-family: 'Cedarville Cursive', cursive;
   width: 60px;
   font-size: 42px;
