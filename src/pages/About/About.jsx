@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
-import { SectionWrapper, AboutHeader, AboutBody, PhotoWrapper, ProfilePhoto } from './About.styled';
+import { SectionWrapper,
+  AboutHeader, AboutBody,
+  PhotoWrapper,
+  ProfilePhoto,
+  ButtonContainer,
+  StyledButton } from './About.styled';
 import profilePic from '../../assets/profile_photo_2.jpg';
 
 const About = ({ testId, className }) => {
@@ -12,6 +17,18 @@ const About = ({ testId, className }) => {
 			<AboutBody>
 				<PhotoWrapper><ProfilePhoto src={profilePic} /></PhotoWrapper>
 			</AboutBody>
+        <ButtonContainer>
+        <StyledButton href='../../assets/DanielDuffyResume.pdf' download='DanielDuffyResume'>
+        <i
+          class="fa fa-download"
+          style={{ color: 'black', marginRight: '24px' }}
+        />Resume</StyledButton>
+              <StyledButton href='https://www.github.com/dpd1208/portfolio'>
+        <i
+          class="fa fa-github"
+          style={{ color: 'black', marginRight: '24px' }}
+          />Github</StyledButton>
+        </ButtonContainer>
 		</SectionWrapper>
 	);
 };

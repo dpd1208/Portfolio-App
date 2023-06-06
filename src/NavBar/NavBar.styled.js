@@ -2,7 +2,8 @@ import styled from 'styled-components';
 
 const NavBarWrapper = styled.div `
   position: relative;
-  background-color: #feb300;
+  background-color: #ada282;
+  opacity: 0.8;
 `;
 
 const NavigationWrapper = styled.div `

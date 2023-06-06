@@ -43,7 +43,7 @@ const AboutSection = styled.div `
   width: 100%;
 
   @media (min-width: 768px) {
-    width: 50%;
+    width: 33%;
   }
   `;
 
@@ -71,39 +71,40 @@ const InfoBlockWrapper = styled.div `
     animation-iteration-count: ;
     animation-delay: 12s;
     animation-fill-mode: forwards;
-    background-color: #ff8066;
+    background-color: #ff5e5b;
   }
   .info-block-2 {
     animation: ${slidein} 1s;
     animation-iteration-count: ;
     animation-delay: 13s;
     animation-fill-mode: forwards;
-    background-color: #20b2aa;
+    background-color: #d8d8d8;
   }
   .info-block-3 {
     animation: ${slidein} 1s;
     animation-iteration-count: ;
     animation-delay: 14s;
     animation-fill-mode: forwards;
-    background-color: #FF5F1F;
+    background-color: #ffffea;
   }
   .info-block-4 {
     animation: ${slidein} 1s;
     animation-iteration-count: ;
     animation-delay: 15s;
     animation-fill-mode: forwards;
-    background-color: #99b6cc;
+    background-color: #00cecb;
   }
   .info-block-5 {
     animation: ${slidein} 1s;
     animation-iteration-count: ;
     animation-delay: 16s;
     animation-fill-mode: forwards;
-    background-color: #dec031;
+    background-color: #ffed66;
   }
   `;
 
   const ModalButton = styled.button `
+    text-decoration: none;
     background: transparent;
     border: none;
     cursor: pointer;
