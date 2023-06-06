@@ -59,7 +59,7 @@ const Contact = ({ testId, className }) => {
 			data-test-id={testId && `${testId}-contact`}
 		>
 			<DescriptionWrapper>
-				<Title>CONTACT</Title>
+				<Title>Contact</Title>
 			</DescriptionWrapper>
 			{submitted ? (
 				<Message>Thank you!</Message>

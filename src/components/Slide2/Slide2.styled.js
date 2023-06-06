@@ -27,7 +27,7 @@ const SectionWrapper = styled.div `
   background-color: #fff5d7;
   align-content: space-evenly;
   fonst-size: 16px;
-  padding: 24px;
+  padding: 12px;
   justify-content: space-around;
 
   .skill-focused {
@@ -36,7 +36,7 @@ const SectionWrapper = styled.div `
   `;
 
 const AboutSection = styled.div `
-  font-size: 60px;
+  font-size: 30px;
   color: black;
   font-family: 'Abril Fatface', cursive;
   align-self: center;
@@ -44,6 +44,7 @@ const AboutSection = styled.div `
 
   @media (min-width: 768px) {
     width: 33%;
+    font-size: 48px;
   }
   `;
 
@@ -56,6 +57,10 @@ const About = styled.div `
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-delay: 10s;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
   `;
 
 const InfoBlockWrapper = styled.div `

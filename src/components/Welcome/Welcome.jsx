@@ -8,7 +8,7 @@ const Welcome = ({ testId, className }) => {
 		<><SectionWrapper
 			className={className}
 			data-test-id={testId && `${testId}-mobile-animation`}
-		></SectionWrapper><WelcomeMessage>Welcome!</WelcomeMessage></>
+		></SectionWrapper><WelcomeMessage>Thanks for stopping by!</WelcomeMessage></>
 	);
 };
 

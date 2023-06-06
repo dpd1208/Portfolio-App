@@ -46,7 +46,7 @@ const NavBar = ({ testId, className, skills, aboutItems, aboutItemsModalContent 
 					</Link>
 					<Link>
 						<NavLink style={linkStyle} to="/about">
-							About
+							Info
 						</NavLink>
 					</Link>
 				</LinkWrapper>

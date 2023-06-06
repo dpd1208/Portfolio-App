@@ -90,7 +90,7 @@ const ProfilePhoto = styled.img`
   display: inline-block;
   font-size: 12px;
   font-family: 'Quicksand', sans-serif !important;
-  background-color: #421c52;
+  background-color: #20b2aa;
     padding: 15px 45px;
     text-align: center;
     text-transform: uppercase;
@@ -100,7 +100,7 @@ const ProfilePhoto = styled.img`
     display: block;
     font-weight: 600;
     border: none;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     cursor: pointer;
     text-decoration: none;
 

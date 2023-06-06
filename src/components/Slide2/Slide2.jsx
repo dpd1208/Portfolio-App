@@ -16,7 +16,7 @@ const Slide2 = ({ testId, className, aboutItems, }) => {
 			data-test-id={testId && `${testId}-slide`}
 		>
 			<AboutSection>
-				<About>How I got here.</About>
+				<About>I can make websites.<br />Here's some other stuff about me.</About>
 			</AboutSection>
       <InfoBlockWrapper>
         {aboutItems.map((item, i) => 

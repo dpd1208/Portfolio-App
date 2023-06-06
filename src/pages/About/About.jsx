@@ -24,7 +24,7 @@ const About = ({ testId, className }) => {
           class="fa fa-download"
           style={{ color: 'white', marginRight: '24px' }}
         />{isMobile ? 'CV' : 'Resume'}</StyledButton>
-              <StyledButton href='https://www.github.com/dpd1208/portfolio'>
+              <StyledButton href='https://www.github.com/dpd1208/portfolio' target='_blank'>
         <i
           class="fa fa-github"
           style={{ color: 'white', marginRight: '24px' }}
