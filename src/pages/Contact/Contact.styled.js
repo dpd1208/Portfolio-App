@@ -98,17 +98,17 @@ const StyledButton = styled.button `
   width: 300px;
   font-size: 18px;
   font-family: ${props => props.theme.fonts.secondaryFont} !important;
-  background-color: #20b2aa;
   padding: 15px 45px;
   text-align: center;
   justify-content: space-between;
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
-  color: black;
+  background-color: ${props => props.theme.name === 'coral' ? '#20b2aa' : 'black'};
+  border: ${props => props.theme.name === 'coral' ? 'none' : '2px solid #00FF41'};
+  color: ${props => props.theme.name === 'coral' ? 'black' : 'white'};
   display: block;
   font-weight: 600;
-  border: none;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   cursor: pointer;
 

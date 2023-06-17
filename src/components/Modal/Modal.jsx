@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types'
 import { bool, string } from 'prop-types';
 import { ModalWrapper, ModalContent, CloseButton } from './Modal.styled';
@@ -42,19 +42,19 @@ Modal.propTypes = {
   /**
    * test id for jest runners
    */
-  testId: string,
+  testId: PropTypes.string,
   /**
    * className for some custom control
    */
-  className: string,
+  className: PropTypes.string,
   /**
    * Show modal true/false
    */
-  showModal: bool,
+  showModal: PropTypes.bool,
   /**
    * Content of modal
    */
-  content: string,
+  content: PropTypes.string,
 };
 
 Modal.defaultProps = {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ThemeProvider from '../../ThemeProvider/provider';
 import Modal from"../Modal/Modal";
 import { SectionWrapper, AboutSection, About, ModalButton, InfoBlockWrapper, InfoBlock } from './Slide2.styled';
@@ -11,6 +11,8 @@ const Slide2 = ({ testId, className, aboutItems, themeName }) => {
     setModalContent(content);
     setShowModal(true);
   };
+  console.log('liii ', themeName);
+
 	return (
     <ThemeProvider theme={themeName}>
       <SectionWrapper
@@ -23,7 +25,7 @@ const Slide2 = ({ testId, className, aboutItems, themeName }) => {
         <InfoBlockWrapper>
           {aboutItems.map((item, i) => 
             <ModalButton onClick={e => handleModalOpen(e, item.modalContent)}>
-              <InfoBlock className={`info-block-${item.id}`}>{item.description}
+              <InfoBlock themeName={themeName} className={`info-block-${item.id}`}>{item.description}
               </InfoBlock>
             </ModalButton>
           )}

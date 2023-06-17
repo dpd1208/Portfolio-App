@@ -75,7 +75,9 @@ const InfoBlockWrapper = styled.div `
     animation-iteration-count: ;
     animation-delay: 6s;
     animation-fill-mode: forwards;
-    background-color: #41b3a3;
+    background-color: ${props => props.theme.name === 'coral' ? '#41b3a3' : 'black'};
+    border: ${props => props.theme.name === 'coral' ? 'none' : '2px solid #00FF41'};
+    color: ${props => props.theme.name === 'coral' ? 'black' : 'white'};
     line-height: 60px;
   }
   .info-block-2 {
@@ -83,7 +85,9 @@ const InfoBlockWrapper = styled.div `
     animation-iteration-count: ;
     animation-delay: 6.5s;
     animation-fill-mode: forwards;
-    background-color: #e8ec77;
+    background-color: ${props => props.theme.name === 'coral' ? '#e8ec77' : 'black'};
+    border: ${props => props.theme.name === 'coral' ? 'none' : '2px solid #00FF41'};
+    color: ${props => props.theme.name === 'coral' ? 'black' : 'white'};
     line-height: 60px;
   }
   .info-block-3 {
@@ -91,7 +95,9 @@ const InfoBlockWrapper = styled.div `
     animation-iteration-count: ;
     animation-delay: 7s;
     animation-fill-mode: forwards;
-    background-color: #e8a87c;
+    background-color: ${props => props.theme.name === 'coral' ? '#e8a87c' : 'black'};
+    border: ${props => props.theme.name === 'coral' ? 'none' : '2px solid #00FF41'};
+    color: ${props => props.theme.name === 'coral' ? 'black' : 'white'};
     line-height: 60px;
   }
   .info-block-4 {
@@ -99,7 +105,9 @@ const InfoBlockWrapper = styled.div `
     animation-iteration-count: ;
     animation-delay: 7.5s;
     animation-fill-mode: forwards;
-    background-color: #c38d9e;
+    background-color: ${props => props.theme.name === 'coral' ? '#c38d9e' : 'black'};
+    border: ${props => props.theme.name === 'coral' ? 'none' : '2px solid #00FF41'};
+    color: ${props => props.theme.name === 'coral' ? 'black' : 'white'};
     line-height: 60px;
   }
   .info-block-5 {
@@ -107,7 +115,9 @@ const InfoBlockWrapper = styled.div `
     animation-iteration-count: ;
     animation-delay: 8s;
     animation-fill-mode: forwards;
-    background-color: #ff5e5b;
+    background-color: ${props => props.theme.name === 'coral' ? '#ff5e5b' : 'black'};
+    border: ${props => props.theme.name === 'coral' ? 'none' : '2px solid #00FF41'};
+    color: ${props => props.theme.name === 'coral' ? 'black' : 'white'};
     line-height: 60px;
   }
   `;
