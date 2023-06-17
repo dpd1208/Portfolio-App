@@ -68,22 +68,22 @@ Main.defaultProps = {
     {
       id: 2,
       description: 'Hobbies',
-      modalContent: 'I’ve lived in Denver for the last seven years and immediately embraced the lifestyle upon moving. Over the summer weekends you can find me camping in the mountains with my dogs, playing in tennis and volleyball leagues, or growing vegetables on my balcony. In the winter I’m skiing, doing an escape room, or in a hot tub. I also play classical guitar, am learning Italian, and travel as much as possible.',
+      modalContent: 'I’ve lived in Denver for the last seven years and immediately embraced the lifestyle. Over the summer weekends you can find me camping in the mountains with my dogs, playing in tennis and volleyball leagues, or growing vegetables on my balcony. In the winter I’m skiing, doing an escape room, or in a hot tub. I also play classical guitar, am learning Italian, and travel as much as possible.',
     },
     {
       id: 3,
       description: 'Expeditions',
-      modalContent: 'My biggest accomplishment is walking the pilgrimage route, the Via Francigena, alone for 800 miles starting in southern France and ending 70 days later at the Vatican City. I’ve completed a number of other high adventures including backpacking 75 miles in New Mexico, canoeing 50 miles through the boundary water lakes, and scuba diving for a week along the Florida Keys.',
+      modalContent: 'My biggest accomplishment is a solo pilgrimage, the Via Francigena - completing 800 miles starting in southern France and ending at the Vatican City 70 days later. I’ve completed a number of other high adventures including backpacking 75 miles in New Mexico, canoeing 50 miles through the boundary water lakes, and scuba diving for a week along the Florida Keys.',
     },
     {
       id: 4,
       description: 'Previous Work',
-      modalContent: 'I started working at a young age, first as a summer counselor at a country club, then as a waiter at the neighborhood pizza place. In college, I waited, bartended, and worked as an office manager. After graduating, I worked at a mortgage lending/servicing company as a customer service rep. I was designated manager quickly before becoming the company’s first product owner. In that role, I spearheaded its transition from a waterfall to an agile product development framework before becoming the development manager for the loan servicing department.',
+      modalContent: 'I started working at a young age, first as a summer counselor at a country club, then as a waiter at the neighborhood pizza place. In college, I waited, bartended, and worked as an office manager. After graduating, I worked my way up at a mortgage lending/servicing company from a customer service rep to manager fairly quickly before becoming the company’s first product owner. In that role, I spearheaded its transition from a waterfall to an agile product development framework before becoming the development manager for the loan servicing department.',
     },
     {
       id: 5,
       description: 'Software Engineer',
-      modalContent: 'After moving to Denver, I began as a product owner at a large tech company. I did well in that position but it caused me to develop a strong curiosity for how software worked. Later I enrolled in a coding bootcamp at The University of Denver and after graduating, moved positions to become a junior engineer. I have exceded expectations ever since, never backing down from a challenge nor delivering anything but a quality product.',
+      modalContent: 'After moving to Denver, I began as a product owner at a large tech company. I did well in that position but it caused me to develop a strong curiosity for how software worked. Later I enrolled in a coding bootcamp at The University of Denver and after graduating, moved positions to become a junior engineer. I have exceded expectations ever since, rising to the level of senior engineer, never backing down from a challenge, and delivering nothing but a quality product.',
     },
   ]
 };
