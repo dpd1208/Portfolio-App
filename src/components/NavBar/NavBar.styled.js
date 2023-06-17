@@ -27,6 +27,10 @@ const Link = styled.a `
   margin-left: 24px;
   margin-right: 12px;
   width: 36px;
+
+  &:nth-of-type(3) {
+    margin-left: 6px;
+  }
 `;
 
 const WebsiteAndContactWrapper = styled.div `

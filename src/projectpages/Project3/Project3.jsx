@@ -1,29 +1,16 @@
-import React, { Component } from 'react';
-import AliceCarousel from 'react-alice-carousel';
-import 'react-alice-carousel/lib/alice-carousel.css';
-import { SectionWrapper, StyledAliceCarouselWrapper } from './Project3.styled';
-import Slide from '../../components/Slide/Slide';
-import Slide2 from '../../components/Slide2/Slide2';
+import React from 'react';
+import ThemeProvider from '../../ThemeProvider/provider';
+import { SectionWrapper } from './Project3.styled';
 
-const Project3 = ({ testId, className, aboutItems }) => {
-	const items = [<Slide />, <Slide2 aboutItems={aboutItems} />];
+const Project3 = ({ testId, className, themeName }) => {
 
 	return (
-		<SectionWrapper
-			className={className}
-			data-test-id={testId && `${testId}-home`}
-		>
-			<StyledAliceCarouselWrapper>
-				<AliceCarousel
-					autoPlay
-					autoPlayInterval={5000}
-					autoPlayStrategy={'none'}
-					animationDuration={2000}
-					mouseTracking
-          items={items}
-				/>
-			</StyledAliceCarouselWrapper>
-		</SectionWrapper>
+		<ThemeProvider theme={themeName}>
+			<SectionWrapper
+				className={className}
+				data-test-id={testId && `${testId}-about`}
+			>Page Under Construction</SectionWrapper>
+		</ThemeProvider>
 	);
 };
 

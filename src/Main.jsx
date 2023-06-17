@@ -6,6 +6,7 @@ import NavBar from './components/NavBar/NavBar';
 const Main = ({
   testId,
   className,
+  theme,
   skills,
   aboutItems,
   projectNames,
@@ -34,7 +35,7 @@ Main.propTypes = {
 	/**
 	 * Class name
 	 */
-	className: PropTypes.string,
+  className: PropTypes.string,
 	/**
 	 * List of skills
 	 */
@@ -51,7 +52,7 @@ Main.propTypes = {
 
 Main.defaultProps = {
 	testId: 'portfolio',
-	className: 'portfolio',
+  className: 'portfolio',
 	skills: [
 		'html',
 		'css',

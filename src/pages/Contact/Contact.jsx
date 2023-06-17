@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ThemeProvider from '../../ThemeProvider/provider';
 import {
 	SectionWrapper,
 	DescriptionWrapper,
@@ -15,7 +16,7 @@ import {
 
 const FORM_ENDPOINT = '';
 
-const Contact = ({ testId, className }) => {
+const Contact = ({ testId, className, themeName }) => {
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
 	const [body, setBody] = useState('');
@@ -54,57 +55,59 @@ const Contact = ({ testId, className }) => {
 	};
 
 	return (
-		<SectionWrapper
-			className={className}
-			data-test-id={testId && `${testId}-contact`}
-		>
-			<DescriptionWrapper>
-				<Title>Contact</Title>
-			</DescriptionWrapper>
-			{submitted ? (
-				<Message>Thank you!</Message>
-			) : (
-				<FormWrapper>
-					<Tagline>GOT QUESTIONS?</Tagline>
-					<StyledForm onSubmit={handleSubmit}>
-						<InputWrapper className="mb-3 pt-0">
-							<StyledInput
-								onChange={e => handleChange(e, 'name')}
-								type="text"
-								placeholder="YOUR NAME"
-								name="name"
-								className="name"
-								required
-							/>
-						</InputWrapper>
-						<InputWrapper className="mb-3 pt-0">
-							<StyledInput
-								onChange={e => handleChange(e, 'email')}
-								type="email"
-								placeholder="EMAIL"
-								name="email"
-								className="email"
-								required
-							/>
-						</InputWrapper>
-						<InputWrapper className="mb-3 pt-0">
-							<StyledTextArea
-								onChange={e => handleChange(e, 'body')}
-								placeholder="YOUR MESSAGE"
-								name="message"
-								className="body"
-								required
-							/>
-						</InputWrapper>
-						<InputWrapper className="mb-3 pt-0">
-							<StyledButton className="button" type="submit">
-								Send a message
-							</StyledButton>
-						</InputWrapper>
-					</StyledForm>
-				</FormWrapper>
-			)}
-		</SectionWrapper>
+		<ThemeProvider theme={themeName}>
+			<SectionWrapper
+				className={className}
+				data-test-id={testId && `${testId}-contact`}
+			>
+				<DescriptionWrapper>
+					<Title>Contact</Title>
+				</DescriptionWrapper>
+				{submitted ? (
+					<Message>Thank you!</Message>
+				) : (
+					<FormWrapper>
+						<Tagline>GOT QUESTIONS?</Tagline>
+						<StyledForm onSubmit={handleSubmit}>
+							<InputWrapper className="mb-3 pt-0">
+								<StyledInput
+									onChange={e => handleChange(e, 'name')}
+									type="text"
+									placeholder="YOUR NAME"
+									name="name"
+									className="name"
+									required
+								/>
+							</InputWrapper>
+							<InputWrapper className="mb-3 pt-0">
+								<StyledInput
+									onChange={e => handleChange(e, 'email')}
+									type="email"
+									placeholder="EMAIL"
+									name="email"
+									className="email"
+									required
+								/>
+							</InputWrapper>
+							<InputWrapper className="mb-3 pt-0">
+								<StyledTextArea
+									onChange={e => handleChange(e, 'body')}
+									placeholder="YOUR MESSAGE"
+									name="message"
+									className="body"
+									required
+								/>
+							</InputWrapper>
+							<InputWrapper className="mb-3 pt-0">
+								<StyledButton className="button" type="submit">
+									Send a message
+								</StyledButton>
+							</InputWrapper>
+						</StyledForm>
+					</FormWrapper>
+				)}
+			</SectionWrapper>
+		</ThemeProvider>
 	);
 };
 

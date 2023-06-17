@@ -43,7 +43,7 @@ const SectionWrapper = styled.div `
   flex-flow: row wrap;
   height: 80vh;
   overflow: hidden;
-  background-color: #ede9d8;
+  background-color: ${props => props.theme.colors.ui.bodyBackground};
   align-content: space-evenly;
   fonst-size: 16px;
   padding: 24px;
