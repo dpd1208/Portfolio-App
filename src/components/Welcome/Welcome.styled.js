@@ -2,8 +2,6 @@ import styled, {
     keyframes
   } from 'styled-components';
   
-  const isMobile = window.innerWidth <= 768;
-  
   const grow = keyframes `
   0% {
     transform: scale(0);
@@ -30,9 +28,10 @@ import styled, {
     text-align: center;
     top: 32vh;
     left: 0;
-    color: black;
+    color: ${props => props.theme.colors.text.default};
     font-size: 72px;
     font-weight: 800;
+    font-family: ${props => props.theme.fonts.secondaryFont};
     width: 100%;
     height: auto;
     transform: scale(0);

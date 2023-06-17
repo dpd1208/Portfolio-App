@@ -58,7 +58,7 @@ const WelcomeMessage = styled.div `
   text-align: center;
   top: 50vh;
   left: 0;
-  color: black;
+  color: ${props => props.theme.colors.text.default};
   font-size: 42px;
   font-weight: 800;
   width: 100%;

@@ -6,7 +6,7 @@ const SectionWrapper = styled.div `
   flex-flow: row wrap;
   height: 80vh;
   overflow: hidden;
-  background-color: #ede9d8;
+  background-color: ${props => props.theme.colors.ui.bodyBackground};
   align-items: center;
   justify-content: center;
   fonst-size: 16px;
@@ -24,8 +24,8 @@ const SectionWrapper = styled.div `
 
 const AboutHeader = styled.div `
   font-size: 42px;
-  color: black;
-  font-family: 'Abril Fatface', cursive;
+  color: ${props => props.theme.colors.text.default};
+  font-family: ${props => props.theme.fonts.mainFont};
   
   @media (min-width: 768px) {
     margin-left: 6%;
@@ -35,8 +35,8 @@ const AboutHeader = styled.div `
 
 const AboutBody = styled.div `
   font-size: 18px;
-  color: black;
-  font-family: 'Quicksand', sans-serif;
+  color: ${props => props.theme.colors.text.default};
+  font-family: ${props => props.theme.fonts.secondaryFont};
   font-weight: 600;
   margin-bottom: 72px;
   align-self: self-start;
@@ -89,7 +89,7 @@ const ProfilePhoto = styled.img`
   margin: 12px;
   display: inline-block;
   font-size: 18px;
-  font-family: 'Quicksand', sans-serif !important;
+  font-family: ${props => props.theme.fonts.secondaryFont} !important;
   background-color: #20b2aa;
     padding: 15px 45px;
     text-align: center;

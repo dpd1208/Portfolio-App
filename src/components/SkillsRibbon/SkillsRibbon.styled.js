@@ -18,7 +18,7 @@ const SectionWrapper = styled.div `
     position: absolute;
     top: 90vh;
     overflow: hidden;
-    background-color: #ede9d8;
+    background-color: ${props => props.theme.colors.ui.bodyBackground};
     z-index: 1;
 
     .list, .list-bis {
@@ -50,10 +50,11 @@ const Card = styled.div `
     float: left;
     overflow: hidden;
     text-align: center;
-    color: black;
+    color: ${props => props.theme.colors.text.default};
     background-color: transparent;
     font-weight: 600;
     font-size: 18px;
+    font-family: ${props => props.theme.fonts.secondaryFont};
 `;
 
 export {

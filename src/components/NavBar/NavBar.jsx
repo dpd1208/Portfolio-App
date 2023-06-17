@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ThemeProvider from '../../ThemeProvider/provider';
 import { Routes, Route, NavLink } from 'react-router-dom';
 import Home from '../../pages/Home/Home';
 import About from '../../pages/About/About';
@@ -23,15 +24,14 @@ const isMobile = window.innerWidth <= 768;
 
 const linkStyle = {
 	textDecoration: 'none',
-	color: 'black',
-	fontSize: '18px',
-	fontWeight: '600',
+	lineHeight: '10vh',
 };
 
 const NavBar = ({ testId, className, skills, aboutItems, projectNames }) => {
 	const [themeName, setThemeName] = useState('coral');
 	const handleThemeChange = () => themeName === 'coral' ? setThemeName('digital') : setThemeName('coral');
 	return (
+		<ThemeProvider theme={themeName}>
 			<NavBarWrapper
 				className={className}
 				data-test-id={testId && `${testId}-nav-bar`}
@@ -43,21 +43,22 @@ const NavBar = ({ testId, className, skills, aboutItems, projectNames }) => {
 						</Logo>
 					)}
 					<LinkWrapper>
-						<Link>
-							<NavLink style={linkStyle} to="/">
+						<NavLink style={linkStyle} to="/">
+							<Link>
 								Home
-							</NavLink>
-						</Link>
-						<Link>
-							<NavLink style={linkStyle} to="/about">
+							</Link>
+						</NavLink>
+						<NavLink style={linkStyle} to="/about">
+							<Link>
 								Info
-							</NavLink>
-						</Link>
-						<Link>
-							<NavLink style={linkStyle} to="/projects">
+							</Link>
+						</NavLink>
+						<NavLink style={linkStyle} to="/projects">
+							<Link>
 								Projects
-							</NavLink>
-						</Link>
+							</Link>
+						</NavLink>
+						
 						<button onClick={(() => {
 							handleThemeChange()})}
 						>change theme</button>
@@ -66,20 +67,20 @@ const NavBar = ({ testId, className, skills, aboutItems, projectNames }) => {
 						<ATag href="https://github.com/dpd1208/portfolio" target="_blank">
 							<i
 								class="fa fa-github fa-2x"
-								style={{ width: '60px', color: 'black' }}
+								style={{ width: '60px', color: themeName === 'coral' ? 'black' : 'white' }}
 							/>
 						</ATag>
 						<ATag>
 							<NavLink style={linkStyle} to="/contact">
 								<i
 									class="fa fa-envelope fa-2x"
-									style={{ width: '60px', color: 'black', marginBottom: '3px' }}
+									style={{ width: '60px', color: themeName === 'coral' ? 'black' : 'white', marginTop: '24px' }}
 								/>
 							</NavLink>
 						</ATag>
 					</WebsiteAndContactWrapper>
 				</NavigationWrapper>
-				<SkillsRibbon skills={skills} />
+				<SkillsRibbon skills={skills} themeName={themeName} />
 				<ContentWrapper></ContentWrapper>
 				<Routes>
 					<Route path="/" element={<Home aboutItems={aboutItems} themeName={themeName} />} />
@@ -91,6 +92,7 @@ const NavBar = ({ testId, className, skills, aboutItems, projectNames }) => {
 					<Route path="projects/3" element={<Project3 themeName={themeName} />} />
 				</Routes>
 			</NavBarWrapper>
+		</ThemeProvider>
 	);
 };
 

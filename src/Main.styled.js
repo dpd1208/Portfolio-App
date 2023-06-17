@@ -5,7 +5,6 @@ import styled, {
 
 const GlobalStyle = createGlobalStyle `
   body {
-    font-family: 'Quicksand', sans-serif;
     height: 100vh;
   }
 `;

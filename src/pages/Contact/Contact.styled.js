@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const SectionWrapper = styled.div `
 display: block;
-background-color: #ede9d8;
+background-color: ${props => props.theme.colors.ui.bodyBackground};
 height: 80vh;
 
 @media (min-width: 768px) {
@@ -33,8 +33,8 @@ justify-content: center;
 
 const Title = styled.div `
 font-size: 72px;
-font-family: 'Abril Fatface', cursive;
-color: black;
+font-family: ${props => props.theme.fonts.mainFont};
+color: ${props => props.theme.colors.text.default};
 
 @media (min-width: 768px) {
   font-size: 98px;
@@ -59,11 +59,11 @@ margin-bottom: 72px;
 
 const Tagline = styled.div `
 font-size: 24px;
-font-family: 'Quicksand', sans-serif !important;
+font-family: ${props => props.theme.fonts.secondaryFont} !important;
 font-weight: 700;
 text-align: center;
 margin-bottom: 12px;
-color: black;
+color: ${props => props.theme.colors.text.default};
 width: 100%;
 `;
 
@@ -80,14 +80,14 @@ width: 300px;
 
 const StyledInput = styled.input `
 width: 300px;
-font-family: 'Quicksand', sans-serif !important;
+font-family: ${props => props.theme.fonts.secondaryFont} !important;
   padding: 6px;
   box-sizing: border-box;
 `;
 
 const StyledTextArea = styled.textarea `
 width: 300px;
-font-family: 'Quicksand', sans-serif !important;
+font-family: ${props => props.theme.fonts.secondaryFont} !important;
   padding: 6px;
   height: 120px;
   box-sizing: border-box;
@@ -97,21 +97,20 @@ font-family: 'Quicksand', sans-serif !important;
 const StyledButton = styled.button `
   width: 300px;
   font-size: 18px;
-  font-family: 'Quicksand', sans-serif !important;
+  font-family: ${props => props.theme.fonts.secondaryFont} !important;
   background-color: #20b2aa;
-    padding: 15px 45px;
-    text-align: center;
-    justify-content: space-between;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: black;
-    display: block;
-    font-weight: 600;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    cursor: pointer;
-  }
+  padding: 15px 45px;
+  text-align: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: black;
+  display: block;
+  font-weight: 600;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
 
   &:hover {
     background-position: right center;

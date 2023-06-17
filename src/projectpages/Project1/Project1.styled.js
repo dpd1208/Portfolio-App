@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 const SectionWrapper = styled.div `
-  background-color: #ede9d8;
+  background-color: ${props => props.theme.colors.ui.bodyBackground};
   height: 80vh;
   display: flex;
   justify-content: center;

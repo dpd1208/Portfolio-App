@@ -15,7 +15,7 @@ const SectionWrapper = styled.div `
   flex-flow: row wrap;
   height: 80vh;
   overflow: hidden;
-  background-color: #ede9d8;
+  background-color: ${props => props.theme.colors.ui.bodyBackground};
   align-items: center;
   justify-content: center;
   fonst-size: 16px;
@@ -33,8 +33,8 @@ const SectionWrapper = styled.div `
 
 const ProjectsHeader = styled.div `
   font-size: 30px;
-  color: black;
-  font-family: 'Abril Fatface', cursive;
+  color: ${props => props.theme.colors.text.default};
+  font-family: ${props => props.theme.fonts.mainFont};
   align-self: center;
   width: 100%;
 
@@ -57,7 +57,7 @@ const ProjectsTitle = styled.div `
 const Link = styled.a `
   position: relative;
   display: flex;
-  color: black;
+  color: ${props => props.theme.colors.text.default};
   float: left;
   align-items: center;
   margin-left: 24px;

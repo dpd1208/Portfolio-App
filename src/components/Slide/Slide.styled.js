@@ -55,8 +55,8 @@ const SectionWrapper = styled.div `
 
   const NameSection = styled.div `
   font-size: 88px;
-  color: black;
-  font-family: 'Abril Fatface', cursive;
+  color: ${props => props.theme.colors.text.default};
+  font-family: ${props => props.theme.fonts.mainFont};
   jestify-content: center;
   text-align: center;
   animation: ${fadeInAnimation} ease 0.65s, 0.65s ${isMobile ? panUpMobile : panUpDesktop} ease  1s;
@@ -83,14 +83,9 @@ const SectionWrapper = styled.div `
   }
   `;
 
-  const InfoBlock = styled.div `
-  
-  `;
-
 
 export {
     SectionWrapper,
   NameSection,
   Name,
-  InfoBlock,
 };

@@ -10,8 +10,8 @@ const coral = {
         }
     },
     fonts: {
-        mainFont: `'Quicksand', sans-serif`,
-        secondaryFont: `'Abril Fatface', cursive`,
+        mainFont: `'Abril Fatface', cursive`,
+        secondaryFont: `'Quicksand', sans-serif`,
     }
 };
 
@@ -22,13 +22,13 @@ const digital = {
             default: 'white',
         },
         ui: {
-            bodyBackground: 'green',
-            headerBackground: 'orange',
+            bodyBackground: '#0D0208',
+            headerBackground: '#008F11',
         }
     },
     fonts: {
-        mainFont: `'Abril Fatface', cursive`,
-        secondaryFont: `'Quicksand', sans-serif`,
+        mainFont: `'Quicksand', sans-serif`,
+        secondaryFont: `'Abril Fatface', cursive`,
     }
 };
 
