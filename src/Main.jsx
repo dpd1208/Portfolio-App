@@ -62,28 +62,28 @@ Main.defaultProps = {
   aboutItems: [
     {
       id: 1,
-      description: 'University of Texas',
-      modalContent: 'I graduated from UT Austin in 2012 with a BA in Economics, with a minor in Latin and a certificate in European Studies. Member, Lambda Chi Alpha.',
+      description: 'Life',
+      modalContent: 'As a kid growing up in Dallas, I spent my time improving as a competitive tennis player, becoming an eagle scout, and navigating life as a gay person in a conservative, religious society. Having achieved the goals I set out to, I moved to Austin and got my degree in Economics at the University of Texas at Austin. I also minored in Latin and received a certificate in European Studies.',
     },
     {
       id: 2,
-      description: 'Pilgrimage',
-      modalContent: 'After graduating I walked The Via Francigena, an ancient pilgrimage route from Canterbury, England to Rome. I began my journey in Besancon, France and finished the 800 miles to Rome on my birthday two months later.',
+      description: 'Hobbies',
+      modalContent: 'I’ve lived in Denver for the last seven years and immediately embraced the lifestyle upon moving. Over the summer weekends you can find me camping in the mountains with my dogs, playing in tennis and volleyball leagues, or growing vegetables on my balcony. In the winter I’m skiing, doing an escape room, or in a hot tub. I also play classical guitar, am learning Italian, and travel as much as possible.',
     },
     {
       id: 3,
-      description: 'Product owner',
-      modalContent: 'My first real job was in customer service at a mortgage company. I moved up quickly, becoming the first product owner at the company. After, I worked in the same role at a telecommunications company.',
+      description: 'Expeditions',
+      modalContent: 'My biggest accomplishment is walking the pilgrimage route, the Via Francigena, alone for 800 miles starting in southern France and ending 70 days later at the Vatican City. I’ve completed a number of other high adventures including backpacking 75 miles in New Mexico, canoeing 50 miles through the boundary water lakes, and scuba diving for a week along the Florida Keys.',
     },
     {
       id: 4,
-      description: 'Coding bootcamp',
-      modalContent: 'Wanting to learn more about software development after years of working closely with developers, I took a full-stack, MERN, coding bootcamp at the University of Denver. The program was a six month and intensive.',
+      description: 'Previous Work',
+      modalContent: 'I started working at a young age, first as a summer counselor at a country club, then as a waiter at the neighborhood pizza place. In college, I waited, bartended, and worked as an office manager. After graduating, I worked at a mortgage lending/servicing company as a customer service rep. I was designated manager quickly before becoming the company’s first product owner. In that role, I spearheaded its transition from a waterfall to an agile product development framework before becoming the development manager for the loan servicing department.',
     },
     {
       id: 5,
-      description: 'Software engineer',
-      modalContent: 'Upon completion of the coding bootcamp, I transitioned into a software engineer role at my current company. I have learned a ton from my coworkers and firends, as well as from working in a large scale engineering environment.',
+      description: 'Software Engineer',
+      modalContent: 'After moving to Denver, I began as a product owner at a large tech company. I did well in that position but it caused me to develop a strong curiosity for how software worked. Later I enrolled in a coding bootcamp at The University of Denver and after graduating, moved positions to become a junior engineer. I have exceded expectations ever since, never backing down from a challenge nor delivering anything but a quality product.',
     },
   ]
 };

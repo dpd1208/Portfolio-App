@@ -6,7 +6,7 @@ const SectionWrapper = styled.div `
   flex-flow: row wrap;
   height: 80vh;
   overflow: hidden;
-  background-color: #fff5d7;
+  background-color: #ede9d8;
   align-items: center;
   justify-content: center;
   fonst-size: 16px;

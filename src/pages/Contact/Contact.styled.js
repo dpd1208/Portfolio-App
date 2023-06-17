@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const SectionWrapper = styled.div `
 display: block;
-background-color: #fff5d7;
+background-color: #ede9d8;
 height: 80vh;
 
 @media (min-width: 768px) {

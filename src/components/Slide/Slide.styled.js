@@ -43,7 +43,7 @@ const SectionWrapper = styled.div `
   flex-flow: row wrap;
   height: 80vh;
   overflow: hidden;
-  background-color: #fff5d7;
+  background-color: #ede9d8;
   align-content: space-evenly;
   fonst-size: 16px;
   padding: 24px;
@@ -59,7 +59,7 @@ const SectionWrapper = styled.div `
   font-family: 'Abril Fatface', cursive;
   jestify-content: center;
   text-align: center;
-  animation: ${fadeInAnimation} ease 1s, 1s ${isMobile ? panUpMobile : panUpDesktop} ease  1s;
+  animation: ${fadeInAnimation} ease 0.65s, 0.65s ${isMobile ? panUpMobile : panUpDesktop} ease  1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   width: 100%;

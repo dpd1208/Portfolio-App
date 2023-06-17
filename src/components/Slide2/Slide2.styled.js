@@ -24,7 +24,7 @@ const SectionWrapper = styled.div `
   flex-flow: row wrap;
   height: 80vh;
   overflow: hidden;
-  background-color: #fff5d7;
+  background-color: #ede9d8;
   align-content: space-evenly;
   fonst-size: 16px;
   padding: 12px;
@@ -76,7 +76,7 @@ const InfoBlockWrapper = styled.div `
     animation-iteration-count: ;
     animation-delay: 6s;
     animation-fill-mode: forwards;
-    background-color: #ff5e5b;
+    background-color: #41b3a3;
   }
   .info-block-2 {
     animation: ${slidein} 1s;
@@ -104,7 +104,7 @@ const InfoBlockWrapper = styled.div `
     animation-iteration-count: ;
     animation-delay: 8s;
     animation-fill-mode: forwards;
-    background-color: #41b3a3;
+    background-color: #ff5e5b;
   }
   `;
 

@@ -64,8 +64,8 @@ const WelcomeMessage = styled.div `
   width: 100%;
   height: auto;
   transform: scale(0);
-  animation: ${grow} 3s ease;
-  animation-delay: 3s;
+  animation: ${grow} 2s ease;
+  animation-delay: 2.5s;
   animation-fill-mode: forwards;
 ;`
 
