@@ -9,15 +9,6 @@ const slidein = keyframes`
   }
 `;
 
-const fadeInAnimation = keyframes`
-0% {
-  opacity: 0;
-}
-100% {
-  opacity: 1;
-}
-`;
-
 const SectionWrapper = styled.div `
   position: relative;
   display: flex;
@@ -25,17 +16,22 @@ const SectionWrapper = styled.div `
   height: 80vh;
   overflow: hidden;
   background-color: #ede9d8;
-  align-content: space-evenly;
+  align-items: center;
+  justify-content: center;
   fonst-size: 16px;
-  padding: 12px;
-  justify-content: space-around;
+  padding: 24px;
 
   .skill-focused {
     font-size: 36px;
-}
-  `;
+  }
 
-const AboutSection = styled.div `
+
+  @media (min-width: 768px) {
+    justify-content: space-around;
+  }
+`;
+
+const ProjectsHeader = styled.div `
   font-size: 30px;
   color: black;
   font-family: 'Abril Fatface', cursive;
@@ -46,22 +42,27 @@ const AboutSection = styled.div `
     width: 36%;
     font-size: 48px;
   }
-  `;
+`;
 
-const About = styled.div `
+const ProjectsTitle = styled.div `
   position: relative;
   text-align: center;
-  opacity: 0;
   width: 100%;
-  animation: ${fadeInAnimation} ease 4s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  animation-delay: 5s;
 
   @media (min-width: 768px) {
     text-align: left;
   }
-  `;
+`;
+
+const Link = styled.a `
+  position: relative;
+  display: flex;
+  color: black;
+  float: left;
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 12px;
+`;
 
 const InfoBlockWrapper = styled.div `
   display: flex;
@@ -69,55 +70,43 @@ const InfoBlockWrapper = styled.div `
   flex-flow: column nowrap;
   text-align: left;
   justify-content: end;
+
   
   .info-block-1 {
-    animation: ${slidein} 1s;
+    animation: ${slidein} 0.5s;
     animation-iteration-count: ;
-    animation-delay: 6s;
+    animation-delay: 0.1s;
     animation-fill-mode: forwards;
     background-color: #41b3a3;
-    line-height: 60px;
   }
   .info-block-2 {
-    animation: ${slidein} 1s;
+    animation: ${slidein} 0.5s;
     animation-iteration-count: ;
-    animation-delay: 6.5s;
+    animation-delay: 0.6s;
     animation-fill-mode: forwards;
     background-color: #e8ec77;
-    line-height: 60px;
   }
   .info-block-3 {
-    animation: ${slidein} 1s;
+    animation: ${slidein} 0.5s;
     animation-iteration-count: ;
-    animation-delay: 7s;
+    animation-delay: 1.1s;
     animation-fill-mode: forwards;
     background-color: #e8a87c;
-    line-height: 60px;
   }
   .info-block-4 {
-    animation: ${slidein} 1s;
+    animation: ${slidein} 0.5s;
     animation-iteration-count: ;
-    animation-delay: 7.5s;
+    animation-delay: 1.6s;
     animation-fill-mode: forwards;
     background-color: #c38d9e;
-    line-height: 60px;
   }
   .info-block-5 {
-    animation: ${slidein} 1s;
+    animation: ${slidein} 0.5s;
     animation-iteration-count: ;
-    animation-delay: 8s;
+    animation-delay: 2.1s;
     animation-fill-mode: forwards;
     background-color: #ff5e5b;
-    line-height: 60px;
   }
-  `;
-
-  const ModalButton = styled.button `
-    text-decoration: none;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    color: black;
   `;
 
 const InfoBlock = styled.div `
@@ -142,12 +131,11 @@ const InfoBlock = styled.div `
   }
   `;
 
-
 export {
   SectionWrapper,
-  AboutSection,
-  About,
-  ModalButton,
+  ProjectsHeader,
+  ProjectsTitle,
+	Link,
   InfoBlockWrapper,
   InfoBlock,
 };

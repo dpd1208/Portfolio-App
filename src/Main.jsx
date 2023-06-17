@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { GlobalStyle, SectionWrapper } from './Main.styled';
-import NavBar from './NavBar/NavBar';
-import SkillsRibbon from './SkillsRibbon/SkillsRibbon';
+import NavBar from './components/NavBar/NavBar';
 
 const Main = ({
   testId,
   className,
   skills,
   aboutItems,
+  projectNames,
 }) => {
 	return (
 		<React.Fragment>
@@ -19,6 +19,7 @@ const Main = ({
           className={className}
           skills={skills}
           aboutItems={aboutItems}
+          projectNames={projectNames}
         />
 			</SectionWrapper>
 		</React.Fragment>
@@ -38,10 +39,14 @@ Main.propTypes = {
 	 * List of skills
 	 */
   skills: PropTypes.shape([]),
-  	/**
+  /**
 	 * List of skills and their modal contents
 	 */
-	aboutItems: PropTypes.shape([]),
+  aboutItems: PropTypes.shape([]),
+  /**
+	 * List of projects for portfolio
+	 */
+	projectNames: PropTypes.shape([]),
 };
 
 Main.defaultProps = {
@@ -85,6 +90,23 @@ Main.defaultProps = {
       description: 'Software Engineer',
       modalContent: 'After moving to Denver, I began as a product owner at a large tech company. I did well in that position but it caused me to develop a strong curiosity for how software worked. Later I enrolled in a coding bootcamp at The University of Denver and after graduating, moved positions to become a junior engineer. I have exceded expectations ever since, rising to the level of senior engineer, never backing down from a challenge, and delivering nothing but a quality product.',
     },
+  ],
+  projectNames: [
+    {
+      id: 1,
+      name: 'Project 1',
+      path: '/projects/1', 
+    },
+    {
+      id: 2,
+      name: 'Project 2',
+      path: '/projects/2', 
+   },
+   {
+     id: 3,
+     name: 'Project 3',
+     path: '/projects/3', 
+   },
   ]
 };
 

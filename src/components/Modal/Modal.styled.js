@@ -21,6 +21,23 @@ const panDown = keyframes `
     top: 0px;
 }
 `;
+const panLeft = keyframes `
+0% {
+    left: 0px;
+    }
+100% {
+    left: -550px;
+}
+`;
+
+const panUp = keyframes `
+0% {
+    top: 0px;
+    }
+100% {
+    top: -550px;
+}
+`;
 
 const ModalWrapper = styled.div `
   position: absolute;
@@ -73,9 +90,15 @@ const ModalWrapper = styled.div `
     height: 360px;
   }
     
-    ::-webkit-scrollbar {
-        display: none;
-      }
+  ::-webkit-scrollbar {
+      display: none;
+    }
+  
+  .fade-out {
+    animation: ${isMobile ? panUp : panLeft} ease  0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
 `;
 
 const CloseButton = styled.div `

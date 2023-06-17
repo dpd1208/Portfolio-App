@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import { SectionWrapper, StyledAliceCarouselWrapper } from './Home.styled';
+import { SectionWrapper, StyledAliceCarouselWrapper } from './Project3.styled';
 import Slide from '../../components/Slide/Slide';
 import Slide2 from '../../components/Slide2/Slide2';
 
-const Home = ({ testId, className, aboutItems }) => {
+const Project3 = ({ testId, className, aboutItems }) => {
 	const items = [<Slide />, <Slide2 aboutItems={aboutItems} />];
 
 	return (
@@ -27,4 +27,4 @@ const Home = ({ testId, className, aboutItems }) => {
 	);
 };
 
-export default Home;
+export default Project3;

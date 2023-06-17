@@ -12,10 +12,12 @@ const Modal = ({
 }) => {
   return (
     <ModalWrapper
+      id={'modal'}
       data-test-id={testId && `${testId}-modal`}
       className={className}
       showModal={showModal}
       onClick={() => {
+        document.getElementById('modal').classList.add('.fade-out');
         setShowModal(false);
       }}
     >

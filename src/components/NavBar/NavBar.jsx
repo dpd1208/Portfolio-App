@@ -1,16 +1,18 @@
 import React from 'react';
 import { Routes, Route, NavLink } from 'react-router-dom';
-import GithubLogo from '../assets/GithubLogo';
-import Home from '../pages/Home/Home';
-import About from '../pages/About/About';
-import Contact from '../pages/Contact/Contact';
+import Home from '../../pages/Home/Home';
+import About from '../../pages/About/About';
+import Projects from '../../pages/Projects/Projects';
+import Contact from '../../pages/Contact/Contact';
+import Project1 from '../../projectpages/Project1/Project1';
+import Project2 from '../../projectpages/Project2/Project2';
+import Project3 from '../../projectpages/Project3/Project3';
 import {
 	NavBarWrapper,
 	NavigationWrapper,
 	LinkWrapper,
 	Link,
 	ATag,
-	ContactButton,
 	ContentWrapper,
 	WebsiteAndContactWrapper,
 	Logo,
@@ -26,7 +28,7 @@ const linkStyle = {
 	fontWeight: '600',
 };
 
-const NavBar = ({ testId, className, skills, aboutItems, aboutItemsModalContent }) => {
+const NavBar = ({ testId, className, skills, aboutItems, projectNames }) => {
 	return (
 		<NavBarWrapper
 			className={className}
@@ -47,6 +49,11 @@ const NavBar = ({ testId, className, skills, aboutItems, aboutItemsModalContent 
 					<Link>
 						<NavLink style={linkStyle} to="/about">
 							Info
+						</NavLink>
+					</Link>
+					<Link>
+						<NavLink style={linkStyle} to="/projects">
+							Projects
 						</NavLink>
 					</Link>
 				</LinkWrapper>
@@ -72,7 +79,11 @@ const NavBar = ({ testId, className, skills, aboutItems, aboutItemsModalContent 
 			<Routes>
 				<Route path="/" element={<Home aboutItems={aboutItems} />} />
 				<Route path="about" element={<About />} />
+				<Route path="projects" element={<Projects projectNames={projectNames} />} />
 				<Route path="contact" element={<Contact />} />
+				<Route path="projects/1" element={<Project1 />} />
+				<Route path="projects/2" element={<Project2 />} />
+				<Route path="projects/3" element={<Project3 />} />
 			</Routes>
 		</NavBarWrapper>
 	);

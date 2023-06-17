@@ -4,10 +4,10 @@ import { SectionWrapper,
   PhotoWrapper,
   ProfilePhoto,
   ButtonContainer,
-  StyledButton } from './About.styled';
+  StyledButton } from './Project1.styled';
 import profilePic from '../../assets/profile_photo_2.jpg';
 
-const About = ({ testId, className }) => {
+const Project1 = ({ testId, className }) => {
   const isMobile = window.innerWidth <= 768;
 	return (
 		<SectionWrapper
@@ -34,4 +34,4 @@ const About = ({ testId, className }) => {
 	);
 };
 
-export default About;
+export default Project1;
