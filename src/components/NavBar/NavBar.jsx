@@ -17,6 +17,7 @@ import {
 	ContentWrapper,
 	WebsiteAndContactWrapper,
 	Logo,
+	ThemeContainer,
 } from './NavBar.styled';
 import SkillsRibbon from '../SkillsRibbon/SkillsRibbon';
 
@@ -30,11 +31,18 @@ const linkStyle = {
 const NavBar = ({ testId, className, skills, aboutItems, projectNames }) => {
 	const [themeName, setThemeName] = useState('coral');
 	const handleThemeChange = () => themeName === 'coral' ? setThemeName('digital') : setThemeName('coral');
+	const el = document.getElementsByTagName('canvas');
+	if (themeName !== 'digital') {
+		el[0].style.display = 'none';
+	} else {
+		el[0].style.display = 'block';
+	}
 	return (
 		<ThemeProvider theme={themeName}>
 			<NavBarWrapper
 				className={className}
 				data-test-id={testId && `${testId}-nav-bar`}
+				themeName={themeName}
 			>
 				<NavigationWrapper>
 					{!isMobile && (
@@ -54,19 +62,37 @@ const NavBar = ({ testId, className, skills, aboutItems, projectNames }) => {
 							</Link>
 						</NavLink>
 						<NavLink style={linkStyle} to="/projects">
-							<Link>
+							<Link style={isMobile ? { marginLeft: '0px' } : { marginLeft: '10px' }}>
 								Projects
 							</Link>
 						</NavLink>
-						
-						<button onClick={(() => {
-							handleThemeChange()})}
-						>change theme</button>
+						<ThemeContainer>
+							<ATag
+								onClick={() => {
+									setThemeName('coral');
+								}}
+							>
+								<i
+								class="fa-solid fa-umbrella-beach"
+								style={{ cursor: 'pointer', position: 'absolute', left: '4px', width: '30px',  marginLeft: '4px', color: themeName === 'coral' ? 'black' : 'white' }}
+								/>
+							</ATag>
+							<ATag
+								onClick={() => {
+									setThemeName('digital');
+								}}
+							>
+								<i
+									class="fa-solid fa-code"
+									style={{ cursor: 'pointer', position: 'absolute', left: '44px', width: '30px', marginRight: '4px', color: themeName === 'coral' ? 'black' : 'white' }}
+								/>
+							</ATag>
+						</ThemeContainer>
 					</LinkWrapper>
 					<WebsiteAndContactWrapper>
 						<ATag href="https://github.com/dpd1208/portfolio" target="_blank">
 							<i
-								class="fa fa-github fa-2x"
+								class="fa-brands fa-github fa-2x"
 								style={{ width: '60px', color: themeName === 'coral' ? 'black' : 'white' }}
 							/>
 						</ATag>

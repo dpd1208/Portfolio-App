@@ -17,7 +17,9 @@ const Slide = ({ testId, className, themeName }) => {
 				<NameSection>
 					<Name>Daniel{isMobile && <br />} Duffy</Name>
 				</NameSection>
-				{isMobile ? <Animation themeName={themeName} /> : <><Flower /><Welcome themeName={themeName}>Welcome</Welcome></>}
+			{isMobile && <Animation themeName={themeName} />}
+			{!isMobile && themeName === 'coral' && <Flower />}
+			{!isMobile && <Welcome themeName={themeName}>Welcome</Welcome>}
 			</SectionWrapper>
 		</ThemeProvider>
 	);

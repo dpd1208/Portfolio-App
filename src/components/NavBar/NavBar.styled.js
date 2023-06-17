@@ -16,20 +16,29 @@ const LinkWrapper = styled.div `
   display: flex;
   height: 10vh;
   width: 50%;
+  margin-left: 6px;
+
+  @media(min-width: 768px) {
+    margin-left: 0px;
+  }
 `;
 
 const Link = styled.a `
   position: relative;
   display: flex;
   color: ${props => props.theme.colors.text.default};
+  font-family: ${props => props.theme.fonts.secondaryFont};
   float: left;
   align-items: center;
-  margin-left: 24px;
-  margin-right: 12px;
   width: 36px;
+  font-size: 12px;
+  margin-left: 6px;
+  margin-right: 6px;
 
-  &:nth-of-type(3) {
-    margin-left: 6px;
+  @media (min-width: 768px) {
+    font-size: 16px;
+    margin-left: 24px;
+    margin-right: 12px;
   }
 `;
 
@@ -45,7 +54,6 @@ const WebsiteAndContactWrapper = styled.div `
 
 const ATag = styled.a `
   display: flex;
-  color: ${props => props.theme.colors.text.default};
   justify-content: end;
   align-items: center;
   text-decoration: none;
@@ -79,6 +87,27 @@ const Logo = styled.div `
   }
 `;
 
+const ThemeContainer = styled.div `
+  position: relative;
+  display: flex;
+  color: ${props => props.theme.colors.text.default};
+  font-family: ${props => props.theme.fonts.secondaryFont};
+  float: left;
+  align-items: center;
+  align-self: center;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 12px;
+  width: 80px;
+  height: 50px;
+  background: transparent;
+
+  @media (min-width: 768px) {
+    margin-left: 30px;
+    margin-right: 12px;
+  }
+`;
+
 
 export {
   NavBarWrapper,
@@ -90,4 +119,5 @@ export {
   WebsiteAndContactWrapper,
   ContentWrapper,
   Logo,
+  ThemeContainer,
 };

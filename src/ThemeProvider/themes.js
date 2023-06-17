@@ -22,8 +22,8 @@ const digital = {
             default: 'white',
         },
         ui: {
-            bodyBackground: '#0D0208',
-            headerBackground: '#008F11',
+            bodyBackground: 'transparent',
+            headerBackground: 'transparent',
         }
     },
     fonts: {
