@@ -47,8 +47,8 @@ const Line = styled.div `
   left: 50vw;
   background-color: black;
   height: 600px;
-  animation: ${fall} 3s ease;
-  animation-delay: 3s;
+  animation: ${fall} 2s ease;
+  animation-delay: 2s;
 ;`
 
 const WelcomeMessage = styled.div `
@@ -65,7 +65,7 @@ const WelcomeMessage = styled.div `
   height: auto;
   transform: scale(0);
   animation: ${grow} 3s ease;
-  animation-delay: 6s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
 ;`
 

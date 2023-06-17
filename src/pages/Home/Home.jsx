@@ -16,9 +16,9 @@ const Home = ({ testId, className, aboutItems }) => {
 			<StyledAliceCarouselWrapper>
 				<AliceCarousel
 					autoPlay
-					autoPlayInterval={9000}
+					autoPlayInterval={5000}
 					autoPlayStrategy={'none'}
-					animationDuration={3000}
+					animationDuration={2000}
 					mouseTracking
           items={items}
 				/>

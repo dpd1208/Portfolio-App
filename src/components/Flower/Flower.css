@@ -12,8 +12,8 @@
   top: 475px;
   left: 50%;
   opacity: 0;
-  animation: fadeIn 4s;
-  animation-delay: 4s;
+  animation: fadeIn 3s;
+  animation-delay: 2s;
   animation-fill-mode: forwards;
 }
 
@@ -30,11 +30,11 @@
   --fl-speed: 0.8s;
 }
 .flower--1 {
-  animation: moving-flower-1 4s linear infinite;
+  animation: moving-flower-1 2s linear infinite;
 }
 .flower--1 .flower__line {
   height: 70vmin;
-  animation-delay: 4.3s;
+  animation-delay: 2.3s;
 }
 .flower--1 .flower__line__leaf--1 {
   animation: blooming-leaf-right var(--fl-speed) 1.6s backwards;
@@ -57,11 +57,11 @@
 .flower--2 {
   left: 50%;
   transform: rotate(20deg);
-  animation: moving-flower-2 4s linear infinite;
+  animation: moving-flower-2 2s linear infinite;
 }
 .flower--2 .flower__line {
   height: 60vmin;
-  animation-delay: 4.6s;
+  animation-delay: 2.6s;
 }
 .flower--2 .flower__line__leaf--1 {
   animation: blooming-leaf-right var(--fl-speed) 1.9s backwards;
@@ -78,35 +78,35 @@
 .flower--3 {
   left: 50%;
   transform: rotate(-15deg);
-  animation: moving-flower-3 4s linear infinite;
+  animation: moving-flower-3 2s linear infinite;
 }
 .flower--3 .flower__line {
-  animation-delay: 4.9s;
+  animation-delay: 2.9s;
 }
 .flower--3 .flower__line__leaf--1 {
-  animation: blooming-leaf-right var(--fl-speed) 2.5s backwards;
+  animation: blooming-leaf-right var(--fl-speed) 1.5s backwards;
 }
 .flower--3 .flower__line__leaf--2 {
-  animation: blooming-leaf-right var(--fl-speed) 2.3s backwards;
+  animation: blooming-leaf-right var(--fl-speed) 1.3s backwards;
 }
 .flower--3 .flower__line__leaf--3 {
-  animation: blooming-leaf-left var(--fl-speed) 2.1s backwards;
+  animation: blooming-leaf-left var(--fl-speed) 1.1s backwards;
 }
 .flower--3 .flower__line__leaf--4 {
-  animation: blooming-leaf-left var(--fl-speed) 1.9s backwards;
+  animation: blooming-leaf-left var(--fl-speed) 0.9s backwards;
 }
 .flower__leafs {
   position: relative;
   animation: blooming-flower 2s backwards;
 }
 .flower__leafs--1 {
-  animation-delay: 4.1s;
+  animation-delay: 2.1s;
 }
 .flower__leafs--2 {
-  animation-delay: 4.4s;
+  animation-delay: 2.4s;
 }
 .flower__leafs--3 {
-  animation-delay: 4.7s;
+  animation-delay: 2.7s;
 }
 .flower__leafs::after {
   content: "";
@@ -176,7 +176,7 @@
   width: 1.5vmin;
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0.2), transparent, rgba(255, 255, 255, 0.2)), linear-gradient(to top, transparent 10%, #14757a, #39c6d6);
   box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.5);
-  animation: grow-flower-tree 4s backwards;
+  animation: grow-flower-tree 2s backwards;
 }
 .flower__line__leaf {
   --w: 7vmin;
@@ -228,7 +228,7 @@
   background-color: #fffb00;
   border-radius: 50%;
   filter: blur(0.2vmin);
-  animation: light-ans 4s linear infinite backwards;
+  animation: light-ans 2s linear infinite backwards;
 }
 .flower__light:nth-child(odd) {
   background-color: #23f0ff;
@@ -279,7 +279,7 @@
   transform: rotate(-48deg) rotateY(40deg);
 }
 .flower__grass--1 {
-  animation: moving-grass 2s linear infinite;
+  animation: moving-grass 1s linear infinite;
 }
 .flower__grass--2 {
   left: 2vmin;
@@ -287,7 +287,7 @@
   transform: scale(0.5) rotate(75deg) rotateX(10deg) rotateY(-200deg);
   opacity: 0.8;
   z-index: 0;
-  animation: moving-grass--2 1.5s linear infinite;
+  animation: moving-grass--2 0.5s linear infinite;
 }
 .flower__grass--top {
   width: 7vmin;

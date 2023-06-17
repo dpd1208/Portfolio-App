@@ -67,7 +67,7 @@ Main.defaultProps = {
     },
     {
       id: 2,
-      description: 'Pilgramage',
+      description: 'Pilgrimage',
       modalContent: 'After graduating I walked The Via Francigena, an ancient pilgrimage route from Canterbury, England to Rome. I began my journey in Besancon, France and finished the 800 miles to Rome on my birthday two months later.',
     },
     {

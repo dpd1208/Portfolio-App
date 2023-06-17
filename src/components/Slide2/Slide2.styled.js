@@ -53,10 +53,10 @@ const About = styled.div `
   text-align: center;
   opacity: 0;
   width: 100%;
-  animation: ${fadeInAnimation} ease 3s;
+  animation: ${fadeInAnimation} ease 4s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 10s;
+  animation-delay: 5s;
 
   @media (min-width: 768px) {
     text-align: left;
@@ -74,35 +74,35 @@ const InfoBlockWrapper = styled.div `
   .info-block-1 {
     animation: ${slidein} 1s;
     animation-iteration-count: ;
-    animation-delay: 12s;
+    animation-delay: 6s;
     animation-fill-mode: forwards;
     background-color: #ff5e5b;
   }
   .info-block-2 {
     animation: ${slidein} 1s;
     animation-iteration-count: ;
-    animation-delay: 13s;
+    animation-delay: 6.5s;
     animation-fill-mode: forwards;
     background-color: #e8ec77;
   }
   .info-block-3 {
     animation: ${slidein} 1s;
     animation-iteration-count: ;
-    animation-delay: 14s;
+    animation-delay: 7s;
     animation-fill-mode: forwards;
     background-color: #e8a87c;
   }
   .info-block-4 {
     animation: ${slidein} 1s;
     animation-iteration-count: ;
-    animation-delay: 15s;
+    animation-delay: 7.5s;
     animation-fill-mode: forwards;
     background-color: #c38d9e;
   }
   .info-block-5 {
     animation: ${slidein} 1s;
     animation-iteration-count: ;
-    animation-delay: 16s;
+    animation-delay: 8s;
     animation-fill-mode: forwards;
     background-color: #41b3a3;
   }

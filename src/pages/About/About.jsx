@@ -19,7 +19,7 @@ const About = ({ testId, className }) => {
 				<PhotoWrapper><ProfilePhoto src={profilePic} /></PhotoWrapper>
 			</AboutBody>
         <ButtonContainer>
-        <StyledButton href='https://dpd1208.github.io/portfolio/resume.pdf' download='resume.pdf'>
+        <StyledButton href='https://dpd1208.github.io/portfolio/resume.pdf' download='resume.pdf' target='_blank'>
         <i
           class="fa fa-download"
           style={{ color: 'black', marginRight: '24px' }}

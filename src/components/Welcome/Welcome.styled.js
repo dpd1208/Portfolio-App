@@ -36,8 +36,8 @@ import styled, {
     width: 100%;
     height: auto;
     transform: scale(0);
-    animation: ${grow} 3s ease;
-    animation-delay: 6s;
+    animation: ${grow} 2s ease;
+    animation-delay: 3s;
     animation-fill-mode: forwards;
     text-shadow: 1px 1px 2px gray, 0 0 1em rgba(20, 117, 122, 0.4), 0 0 0.2em white;
   ;`

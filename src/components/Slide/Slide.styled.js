@@ -59,7 +59,7 @@ const SectionWrapper = styled.div `
   font-family: 'Abril Fatface', cursive;
   jestify-content: center;
   text-align: center;
-  animation: ${fadeInAnimation} ease 3s, 3s ${isMobile ? panUpMobile : panUpDesktop} ease  3s;
+  animation: ${fadeInAnimation} ease 1s, 1s ${isMobile ? panUpMobile : panUpDesktop} ease  1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   width: 100%;

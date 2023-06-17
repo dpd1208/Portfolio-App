@@ -19,15 +19,15 @@ const Modal = ({
         setShowModal(false);
       }}
     >
-      <ModalContent>
+      <ModalContent id={'modal-content'}>
         <CloseButton
             onClick={() => {
             setShowModal(false);
             }}
             className="close">
             <i
-                class="fa fa-close fa-2x"
-                style={{ width: '60px', color: 'black' }}
+                class="fa fa-close"
+                style={{ width: '20px', color: 'black' }}
             />
         </CloseButton>
         {modalContent}
