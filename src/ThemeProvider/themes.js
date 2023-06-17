@@ -27,8 +27,8 @@ const digital = {
         }
     },
     fonts: {
-        mainFont: `'Quicksand', sans-serif`,
-        secondaryFont: `'Abril Fatface', cursive`,
+        mainFont: `'Titillium Web', sans-serif;`,
+        secondaryFont: `'Pathway Extreme', sans-serif;`,
     }
 };
 

@@ -8,7 +8,7 @@ const NavBarWrapper = styled.div `
 const NavigationWrapper = styled.div `
   display: flex;
   width: 100%;
-  border-bottom: 2px solid #A4A7A5;
+  border-bottom: ${props => props.theme.name === 'coral' ? '2px solid #A4A7A5' : '2px solid #00FF41'};
 `;
 
 const LinkWrapper = styled.div `

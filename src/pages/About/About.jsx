@@ -24,15 +24,15 @@ const About = ({ testId, className, themeName }) => {
           <PhotoWrapper><ProfilePhoto src={profilePic} /></PhotoWrapper>
         </AboutBody>
           <ButtonContainer>
-          <StyledButton href='https://dpd1208.github.io/portfolio/resume.pdf' download='resume.pdf' target='_blank'>
+          <StyledButton href='https://dpd1208.github.io/portfolio/resume.pdf' download='resume.pdf' target='_blank' style={{ color: themeName === 'coral' ? 'black' : 'white' }}>
           <i
+            style={{ marginRight: '24px' }}
             class="fa fa-download"
-            style={{ color: 'black', marginRight: '24px' }}
           />{isMobile ? 'CV' : 'Resume'}</StyledButton>
-                <StyledButton href='https://www.github.com/dpd1208/portfolio' target='_blank'>
+                <StyledButton href='https://www.github.com/dpd1208/portfolio' target='_blank' style={{ color: themeName === 'coral' ? 'black' : 'white' }}>
           <i
-            class="fa fa-github"
-            style={{ color: 'black', marginRight: '24px' }}
+            style={{ marginRight: '24px' }}
+            class="fa-brands fa-github"
             />{isMobile ? 'Git' : 'Github'}</StyledButton>
           </ButtonContainer>
       </SectionWrapper>

@@ -64,7 +64,7 @@ const ProfilePhoto = styled.img`
   width: 200px;
   margin-left: 6px;
   border-radius: 50%;
-  border: 12px solid #dbd551;
+  border: ${props => props.theme.name === 'coral' ? '12px solid #dbd551' : '12px solid #008f11'};
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   `;
 
@@ -90,19 +90,19 @@ const ProfilePhoto = styled.img`
   display: inline-block;
   font-size: 18px;
   font-family: ${props => props.theme.fonts.secondaryFont} !important;
-  background-color: #20b2aa;
-    padding: 15px 45px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: black;            
-    display: block;
-    font-weight: 600;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    cursor: pointer;
-    text-decoration: none;
+  background-color: ${props => props.theme.name === 'coral' ? '#20b2aa' : 'black'};
+  border: ${props => props.theme.name === 'coral' ? 'none' : '2px solid #00FF41'};
+  color: ${props => props.theme.name === 'coral' ? 'black' : 'white'};
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;       
+  display: block;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  text-decoration: none;
 
   &:hover {
     background-position: right center;
