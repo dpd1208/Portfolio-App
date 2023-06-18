@@ -72,8 +72,9 @@ const ModalWrapper = styled.div `
   display: flex;
   font-size: 18px;
   font-weight: 600px;
-  background-color: #EEF9FD;
-  color: black;
+  background-color: ${props => props.themeName === 'coral' ? '#EEF9FD' : 'black'};
+  border: ${props => props.theme.name === 'coral' ? 'none' : '2px solid #00FF41'};
+  color: ${props => props.theme.name === 'coral' ? 'black' : '#00FF41'};
   justify-content: center;
   align-items: center;
   text-align: center;
