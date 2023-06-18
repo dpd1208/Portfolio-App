@@ -37,7 +37,7 @@ const NavBar = ({ testId, className, skills, aboutItems, projectNames }) => {
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			setActiveIndex(1);
-		}, 5000);
+		}, 7000);
 		return () => clearTimeout(timer);
 	  }, []);
 
@@ -120,7 +120,7 @@ const NavBar = ({ testId, className, skills, aboutItems, projectNames }) => {
 				<Routes>
 					<Route path="/" element={<Home aboutItems={aboutItems} themeName={themeName} activeIndex={activeIndex} />} />
 					<Route path="about" element={<About themeName={themeName} />} />
-					<Route path="projects" element={<Projects projectNames={projectNames} themeName={themeName} />} />
+					<Route path="projects" element={<Projects projectNames={projectNames} themeName={themeName} activeIndex={activeIndex} />} />
 					<Route path="contact" element={<Contact themeName={themeName} />} />
 					<Route path="projects/1" element={<Project1 themeName={themeName} />} />
 					<Route path="projects/2" element={<Project2 themeName={themeName} />} />

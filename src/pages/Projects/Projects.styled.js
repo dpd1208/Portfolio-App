@@ -75,16 +75,18 @@ const InfoBlockWrapper = styled.div `
   .info-block-1 {
     animation: ${slidein} 0.5s;
     animation-iteration-count: ;
-    animation-delay: 0.1s;
+    animation-delay: ${props => props.activeIndex === 1 ? '0s' : '0.1'};
+    animation-duration: ${props => props.activeIndex === 1 ? '0s' : '0.5s'};
     animation-fill-mode: forwards;
     background-color: ${props => props.theme.name === 'coral' ? '#41b3a3' : 'black'};
     border: ${props => props.theme.name === 'coral' ? 'none' : '2px solid #00FF41'};
     color: ${props => props.theme.name === 'coral' ? 'black' : 'white'};
   }
   .info-block-2 {
-    animation: ${slidein} 0.5s;
+    animation: ${slidein};
     animation-iteration-count: ;
-    animation-delay: 0.6s;
+    animation-delay: ${props => props.activeIndex === 1 ? '0s' : '0.6s'};
+    animation-duration: ${props => props.activeIndex === 1 ? '0s' : '0.5s'};
     animation-fill-mode: forwards;
     background-color: ${props => props.theme.name === 'coral' ? '#e8ec77' : 'black'};
     border: ${props => props.theme.name === 'coral' ? 'none' : '2px solid #00FF41'};
@@ -93,7 +95,8 @@ const InfoBlockWrapper = styled.div `
   .info-block-3 {
     animation: ${slidein} 0.5s;
     animation-iteration-count: ;
-    animation-delay: 1.1s;
+    animation-delay: ${props => props.activeIndex === 1 ? '0s' : '1.1s'};
+    animation-duration: ${props => props.activeIndex === 1 ? '0s' : '0.5s'};
     animation-fill-mode: forwards;
     background-color: ${props => props.theme.name === 'coral' ? '#e8a87c' : 'black'};
     border: ${props => props.theme.name === 'coral' ? 'none' : '2px solid #00FF41'};
@@ -102,7 +105,8 @@ const InfoBlockWrapper = styled.div `
   .info-block-4 {
     animation: ${slidein} 0.5s;
     animation-iteration-count: ;
-    animation-delay: 1.6s;
+    animation-delay: ${props => props.activeIndex === 1 ? '0s' : '1.6'};
+    animation-duration: ${props => props.activeIndex === 1 ? '0s' : '0.5s'};
     animation-fill-mode: forwards;
     background-color: ${props => props.theme.name === 'coral' ? '#c38d9e' : 'black'};
     border: ${props => props.theme.name === 'coral' ? 'none' : '2px solid #00FF41'};
@@ -111,7 +115,8 @@ const InfoBlockWrapper = styled.div `
   .info-block-5 {
     animation: ${slidein} 0.5s;
     animation-iteration-count: ;
-    animation-delay: 2.1s;
+    animation-delay: ${props => props.activeIndex === 1 ? '0s' : '2.1'};
+    animation-duration: ${props => props.activeIndex === 1 ? '0s' : '0.5s'};
     animation-fill-mode: forwards;
     background-color: ${props => props.theme.name === 'coral' ? '#ff5e5b' : 'black'};
     border: ${props => props.theme.name === 'coral' ? 'none' : '2px solid #00FF41'};

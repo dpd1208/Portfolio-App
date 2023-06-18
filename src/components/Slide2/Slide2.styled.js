@@ -53,7 +53,8 @@ const About = styled.div `
   text-align: center;
   opacity: 0;
   width: 100%;
-  animation: ${fadeInAnimation} ease 4s;
+  animation: ${fadeInAnimation} ease;
+  animation-duration: ${props => props.activeIndex === 1 ? '0s' : '4s'};
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-delay: ${props => props.activeIndex === 1 ? '0s' : '5s'};
@@ -71,9 +72,10 @@ const InfoBlockWrapper = styled.div `
   justify-content: end;
   
   .info-block-1 {
-    animation: ${slidein} 1s;
+    animation: ${slidein};
     animation-iteration-count: ;
-    animation-delay: ${props => props.activeIndex === 1 ? '0s' : '6s'};
+    animation-delay: ${props => props.activeIndex === 1 ? '0s' : '5s'};
+    animation-duration: ${props => props.activeIndex === 1 ? '0s' : '1s'};
     animation-fill-mode: forwards;
     background-color: ${props => props.theme.name === 'coral' ? '#41b3a3' : 'black'};
     border: ${props => props.theme.name === 'coral' ? 'none' : '2px solid #00FF41'};
@@ -81,9 +83,10 @@ const InfoBlockWrapper = styled.div `
     line-height: 60px;
   }
   .info-block-2 {
-    animation: ${slidein} 1s;
+    animation: ${slidein};
     animation-iteration-count: ;
-    animation-delay: ${props => props.activeIndex === 1 ? '0s' : '6.5s'};
+    animation-delay: ${props => props.activeIndex === 1 ? '0s' : '5.25s'};
+    animation-duration: ${props => props.activeIndex === 1 ? '0s' : '1s'};
     animation-fill-mode: forwards;
     background-color: ${props => props.theme.name === 'coral' ? '#e8ec77' : 'black'};
     border: ${props => props.theme.name === 'coral' ? 'none' : '2px solid #00FF41'};
@@ -91,9 +94,10 @@ const InfoBlockWrapper = styled.div `
     line-height: 60px;
   }
   .info-block-3 {
-    animation: ${slidein} 1s;
+    animation: ${slidein};
     animation-iteration-count: ;
-    animation-delay: ${props => props.activeIndex === 1 ? '0s' : '7s'};
+    animation-delay: ${props => props.activeIndex === 1 ? '0s' : '5.5s'};
+    animation-duration: ${props => props.activeIndex === 1 ? '0s' : '1s'};
     animation-fill-mode: forwards;
     background-color: ${props => props.theme.name === 'coral' ? '#e8a87c' : 'black'};
     border: ${props => props.theme.name === 'coral' ? 'none' : '2px solid #00FF41'};
@@ -101,9 +105,10 @@ const InfoBlockWrapper = styled.div `
     line-height: 60px;
   }
   .info-block-4 {
-    animation: ${slidein} 1s;
+    animation: ${slidein};
     animation-iteration-count: ;
-    animation-delay: ${props => props.activeIndex === 1 ? '0s' : '7.5s'};
+    animation-delay: ${props => props.activeIndex === 1 ? '0s' : '5.75s'};
+    animation-duration: ${props => props.activeIndex === 1 ? '0s' : '1s'};
     animation-fill-mode: forwards;
     background-color: ${props => props.theme.name === 'coral' ? '#c38d9e' : 'black'};
     border: ${props => props.theme.name === 'coral' ? 'none' : '2px solid #00FF41'};
@@ -111,9 +116,10 @@ const InfoBlockWrapper = styled.div `
     line-height: 60px;
   }
   .info-block-5 {
-    animation: ${slidein} 1s;
+    animation: ${slidein};
     animation-iteration-count: ;
-    animation-delay: ${props => props.activeIndex === 1 ? '0s' : '8s'};
+    animation-delay: ${props => props.activeIndex === 1 ? '0s' : '6s'};
+    animation-duration: ${props => props.activeIndex === 1 ? '0s' : '1s'};
     animation-fill-mode: forwards;
     background-color: ${props => props.theme.name === 'coral' ? '#ff5e5b' : 'black'};
     border: ${props => props.theme.name === 'coral' ? 'none' : '2px solid #00FF41'};

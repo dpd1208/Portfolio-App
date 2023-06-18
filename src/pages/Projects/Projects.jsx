@@ -9,7 +9,7 @@ import {
   InfoBlock,
    } from './Projects.styled';
 
-const Projects = ({ testId, className, projectNames }) => {
+const Projects = ({ testId, className, projectNames, activeIndex }) => {
   
 const linkStyle = {
 	textDecoration: 'none',
@@ -26,7 +26,7 @@ const linkStyle = {
 			<ProjectsHeader>
         <ProjectsTitle>My Projects</ProjectsTitle>
       </ProjectsHeader>
-        <InfoBlockWrapper>
+        <InfoBlockWrapper activeIndex={activeIndex}>
         {projectNames.map(item => 
 					<Link>
 						<NavLink style={linkStyle} to={item.path}>
