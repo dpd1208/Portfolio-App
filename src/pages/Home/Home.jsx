@@ -6,8 +6,8 @@ import { SectionWrapper, StyledAliceCarouselWrapper } from './Home.styled';
 import Slide from '../../components/Slide/Slide';
 import Slide2 from '../../components/Slide2/Slide2';
 
-const Home = ({ testId, className, aboutItems, themeName }) => {
-	const items = [<Slide themeName={themeName} />, <Slide2 aboutItems={aboutItems} themeName={themeName} />];
+const Home = ({ testId, className, aboutItems, themeName, activeIndex }) => {
+	const items = [<Slide themeName={themeName} activeIndex={activeIndex} />, <Slide2 aboutItems={aboutItems} themeName={themeName} activeIndex={activeIndex} />];
 
 	return (
 		<ThemeProvider theme={themeName}>
@@ -24,6 +24,7 @@ const Home = ({ testId, className, aboutItems, themeName }) => {
 						animationDuration={2000}
 						mouseTracking
 						items={items}
+						activeIndex={activeIndex}
 					/>
 				</StyledAliceCarouselWrapper>
 			</SectionWrapper>

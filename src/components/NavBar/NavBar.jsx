@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ThemeProvider from '../../ThemeProvider/provider';
 import { Routes, Route, NavLink } from 'react-router-dom';
 import Home from '../../pages/Home/Home';
@@ -30,8 +30,17 @@ const linkStyle = {
 
 const NavBar = ({ testId, className, skills, aboutItems, projectNames }) => {
 	const [themeName, setThemeName] = useState('coral');
-	const handleThemeChange = () => themeName === 'coral' ? setThemeName('digital') : setThemeName('coral');
 	const el = document.getElementsByTagName('canvas');
+
+	const [activeIndex, setActiveIndex] = useState(0);
+
+	useEffect(() => {
+		const timer = setTimeout(() => {
+			setActiveIndex(1);
+		}, 5000);
+		return () => clearTimeout(timer);
+	  }, []);
+
 	if (themeName !== 'digital') {
 		el[0].style.display = 'none';
 	} else {
@@ -109,7 +118,7 @@ const NavBar = ({ testId, className, skills, aboutItems, projectNames }) => {
 				<SkillsRibbon skills={skills} themeName={themeName} />
 				<ContentWrapper></ContentWrapper>
 				<Routes>
-					<Route path="/" element={<Home aboutItems={aboutItems} themeName={themeName} />} />
+					<Route path="/" element={<Home aboutItems={aboutItems} themeName={themeName} activeIndex={activeIndex} />} />
 					<Route path="about" element={<About themeName={themeName} />} />
 					<Route path="projects" element={<Projects projectNames={projectNames} themeName={themeName} />} />
 					<Route path="contact" element={<Contact themeName={themeName} />} />
