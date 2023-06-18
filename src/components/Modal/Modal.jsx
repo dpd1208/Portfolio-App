@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types'
-import { bool, string } from 'prop-types';
 import { ModalWrapper, ModalContent, CloseButton } from './Modal.styled';
 
 const Modal = ({
@@ -9,6 +8,7 @@ const Modal = ({
     showModal,
     setShowModal,
     modalContent,
+    themeName
 }) => {
   return (
     <ModalWrapper
@@ -29,7 +29,7 @@ const Modal = ({
             className="close">
             <i
                 class="fa fa-close"
-                style={{ width: '20px', color: 'black' }}
+                style={{ width: '20px', color: themeName === 'coral' ? 'black' : '#00FF41' }}
             />
         </CloseButton>
         {modalContent}

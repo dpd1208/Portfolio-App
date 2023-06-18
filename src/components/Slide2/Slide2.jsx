@@ -36,6 +36,7 @@ const Slide2 = ({ testId, className, aboutItems, themeName }) => {
           showModal={showModal}
           setShowModal={setShowModal}
           modalContent={modalContent}
+          themeName={themeName}
         />}
       </SectionWrapper>
     </ThemeProvider>

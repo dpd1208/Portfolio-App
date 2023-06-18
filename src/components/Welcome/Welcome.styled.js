@@ -36,9 +36,9 @@ import styled, {
     height: auto;
     transform: scale(0);
     animation: ${grow} 2s ease;
-    animation-delay: 3s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
-    text-shadow: 1px 1px 2px gray, 0 0 1em rgba(20, 117, 122, 0.4), 0 0 0.2em white;
+    text-shadow: ${props => props.theme.name === 'coral' ? '1px 1px 2px gray, 0 0 1em rgba(20, 117, 122, 0.4), 0 0 0.2em white' : 'none'};
   ;`
   
   

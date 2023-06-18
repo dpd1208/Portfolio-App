@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import ThemeProvider from '../../ThemeProvider/provider';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
@@ -19,7 +19,7 @@ const Home = ({ testId, className, aboutItems, themeName }) => {
 				<StyledAliceCarouselWrapper>
 					<AliceCarousel
 						autoPlay
-						autoPlayInterval={5000}
+						autoPlayInterval={4000}
 						autoPlayStrategy={'none'}
 						animationDuration={2000}
 						mouseTracking

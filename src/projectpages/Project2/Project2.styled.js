@@ -7,6 +7,8 @@ const SectionWrapper = styled.div `
   display: flex;
   justify-content: center;
   align-items: center;
+  color: ${props => props.theme.colors.text.default};
+  font-family: ${props => props.theme.fonts.secondaryFont};
 
   @media (min-width: 768px) {
     padding: 24px;

@@ -64,7 +64,7 @@ const ProfilePhoto = styled.img`
   width: 200px;
   margin-left: 6px;
   border-radius: 50%;
-  border: ${props => props.theme.name === 'coral' ? '12px solid #dbd551' : '12px solid #008f11'};
+  border: ${props => props.theme.name === 'coral' ? '12px solid #dbd551' : '12px solid #ff3b3b'};
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   `;
 

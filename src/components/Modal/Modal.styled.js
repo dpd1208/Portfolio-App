@@ -51,14 +51,10 @@ const ModalWrapper = styled.div `
   width: 100%;
 
   @media (min-width: 764px) {
-    width: 78%;
+    width: 50%;
     top: 20%;
-    left: -18%;
     height: 60%;
-  }
-
-  @media (min-width: 1120px) {
-    width: 90%;
+    left: -2px;
   }
 `;
 
@@ -72,7 +68,7 @@ const ModalWrapper = styled.div `
   display: flex;
   font-size: 18px;
   font-weight: 600px;
-  background-color: ${props => props.themeName === 'coral' ? '#EEF9FD' : 'black'};
+  background-color: ${props => props.theme.name === 'coral' ? '#EEF9FD' : 'black'};
   border: ${props => props.theme.name === 'coral' ? 'none' : '2px solid #00FF41'};
   color: ${props => props.theme.name === 'coral' ? 'black' : '#00FF41'};
   justify-content: center;
@@ -87,7 +83,6 @@ const ModalWrapper = styled.div `
   animation-fill-mode: forwards;
 
   @media (min-width: 764px) {
-    width: 60%;
     height: 360px;
   }
     

@@ -50,7 +50,7 @@ const Card = styled.div `
     float: left;
     overflow: hidden;
     text-align: center;
-    color: ${props => props.theme.colors.text.default};
+    color: ${props => props.theme.name === 'coral' ? props.theme.colors.text.default : '#ff3b3b'};
     background-color: transparent;
     font-weight: 600;
     font-size: 18px;

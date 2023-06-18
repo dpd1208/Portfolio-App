@@ -120,6 +120,10 @@ const InfoBlockWrapper = styled.div `
     color: ${props => props.theme.name === 'coral' ? 'black' : 'white'};
     line-height: 60px;
   }
+
+  @media (min-width: 768px) {
+    margin-top: 20px;
+  }
   `;
 
   const ModalButton = styled.button `
