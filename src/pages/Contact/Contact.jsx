@@ -14,8 +14,6 @@ import {
 	Message,
 } from './Contact.styled';
 
-const FORM_ENDPOINT = '';
-
 const Contact = ({ testId, className, themeName }) => {
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');

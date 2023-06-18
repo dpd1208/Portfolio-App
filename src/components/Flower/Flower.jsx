@@ -3,7 +3,7 @@
 //   I've taken some inspiration by Yup Nguyen's Artwork: https://dribbble.com/shots/11096994-Virtual-Garden.
 //   Made with Pure CSS & ♥
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Flower.css';
 
 const Flower = ({ testId, className }) => {

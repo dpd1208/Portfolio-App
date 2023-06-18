@@ -8,6 +8,7 @@ const Modal = ({
     showModal,
     setShowModal,
     modalContent,
+    modalName,
     themeName
 }) => {
   return (
@@ -32,7 +33,8 @@ const Modal = ({
                 style={{ width: '20px', color: themeName === 'coral' ? 'black' : '#00FF41' }}
             />
         </CloseButton>
-        {modalContent}
+        <p style={{ fontSize: '18px', fontWeight: '800', marginBottom: '12px' }}>{modalName}</p>
+        <p style={{ lineHeight: '28px' }}>{modalContent}</p>
       </ModalContent>
     </ModalWrapper>
   );

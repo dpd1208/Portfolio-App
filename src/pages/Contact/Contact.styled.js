@@ -48,7 +48,6 @@ justify-content: center;
 flex-flow: row wrap;
 align-items: center;
 align-content: center;
-margin-right: 6%;
 margin-bottom: 72px;
 
 @media (min-width: 768px) {
